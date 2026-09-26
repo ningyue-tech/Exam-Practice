@@ -3,7 +3,7 @@
   'use strict';
   const b=window.NINGYUE_BRAND||{};
   function apply(){
-    document.querySelectorAll('[data-brand]').forEach(el=>{const key=el.dataset.brand;if(typeof b[key]==='string')el.textContent=b[key];});
+    document.querySelectorAll('[data-brand]').forEach(el=>{const key=el.dataset.brand;if(typeof b[key]==='string'){const value=b[key];el.textContent=key==='description'?value.replace(/汽车维修/g,'汽车科目组').replace(/商务营销/g,'市场营销科目组').replace(/两门科目/g,'两个科目组'):value;}});
     document.querySelectorAll('[data-year]').forEach(el=>el.textContent=b.copyrightYear||String(new Date().getFullYear()));
     document.querySelectorAll('[data-brand-logo]').forEach(el=>el.alt=(b.name||'宁跃教育')+'标志');
     if(window.matchMedia('(max-width: 900px)').matches)document.querySelectorAll('.ny-settings-disclosure').forEach(el=>el.open=false);

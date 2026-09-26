@@ -1,0 +1,111 @@
+{
+  "scope": "Chromium离线DOM与交互测试：本地HTTP导航被当前环境策略阻止，资源以内联方式载入，名单脚本读取、sessionStorage、localStorage、页面跳转及下载使用测试桩。未验收真实浏览器跨页存储、网络请求、下载行为或GitHub上线。",
+  "results": [
+    {
+      "check": "首页两组科目名称、动态按钮和品牌简介统一",
+      "passed": true
+    },
+    {
+      "check": "旧品牌配置简介兼容；自定义联系方式不改动",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：未验证时仍显示本科目验证提示",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：另一科名单不可混用",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：名单匹配、目标链接及考试页标题正确",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：80题100分，新考试无标红",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：三类题型可点击，漏题标红与补答消红",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：模拟旧本地记录恢复，迁移默认标题且保留作答与标记",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：重新考试清除旧作答和旧标红",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：判分100分，成绩单文本及生成的下载名正确",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：未验证时仍显示本科目验证提示",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：另一科名单不可混用",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：名单匹配、目标链接及考试页标题正确",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：80题100分，新考试无标红",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：三类题型可点击，漏题标红与补答消红",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：模拟旧本地记录恢复，迁移默认标题且保留作答与标记",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：重新考试清除旧作答和旧标红",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：判分100分，成绩单文本及生成的下载名正确",
+      "passed": true
+    },
+    {
+      "check": "汽车科目组：手机登录页无横向溢出",
+      "passed": true
+    },
+    {
+      "check": "市场营销科目组：手机登录页无横向溢出",
+      "passed": true
+    },
+    {
+      "check": "手机首页无横向溢出",
+      "passed": true
+    },
+    {
+      "check": "上述离线测试页面无JavaScript运行时错误",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "count": 22,
+  "script_syntax_checks": 8,
+  "banks": [
+    {
+      "file": "auto-exam.html",
+      "questions": 796,
+      "question_bank_sha256": "ad7e8d4fe5daac2d118391db0de722aae8fb4f7ebd68a25539276fb869dbdcc2",
+      "bank_unchanged": true
+    },
+    {
+      "file": "marketing-exam.html",
+      "questions": 800,
+      "question_bank_sha256": "20ba1591997fee278d8ef13a1ceae5d936c5337adcd7e45a141537be3f444605",
+      "bank_unchanged": true
+    }
+  ],
+  "whitelist_records_unchanged": true
+}

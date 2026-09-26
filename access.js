@@ -5,7 +5,7 @@
  */
 (function () {
   'use strict';
-  const SUBJECTS = Object.freeze({auto: '汽车维修', marketing: '商务营销'});
+  const SUBJECTS = Object.freeze({auto: '汽车科目组', marketing: '市场营销科目组'});
   const FILES = Object.freeze({auto: 'auto-exam.html', marketing: 'marketing-exam.html'});
   const base = new URL('./', document.currentScript.src);
   const prefix = 'exam-practice-whitelist-v1:' + encodeURIComponent(base.pathname) + ':';
