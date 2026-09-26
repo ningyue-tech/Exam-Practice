@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="汽车维修100分智能机考，随机组卷、在线答题、漏题提醒与即时评分。"><meta name="referrer" content="strict-origin-when-cross-origin"><title>汽车维修 · 100分在线机考</title><style>
+<html lang="zh-CN" data-access-state="checking"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="汽车维修100分智能机考，随机组卷、在线答题、漏题提醒与即时评分。"><meta name="referrer" content="strict-origin-when-cross-origin"><title>汽车维修 · 100分在线机考</title><style>
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;background:#f5f7fb;color:#1f2937}
 button,input,select{font:inherit}.top{position:sticky;top:0;z-index:20;background:#111827;color:#fff;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
 .top h1{font-size:20px;margin:0}.top small{color:#cbd5e1}.timer{font-size:24px;font-weight:800}.layout{max-width:1500px;margin:auto;padding:18px;display:grid;grid-template-columns:330px 1fr;gap:18px}
@@ -26,7 +26,9 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 details{margin:14px 0}summary{cursor:pointer;font-weight:700}.side h3{font-size:16px}.row input[disabled],.row select[disabled]{background:#f8fafc;color:#64748b}
 @media(max-width:900px){.top{padding:12px}.top h1{font-size:17px}.top small{font-size:11px}.timer{font-size:22px;margin-left:10px}.layout{padding:10px;gap:12px}.side{padding:14px;max-height:none}.empty{padding:45px 15px}#nav{grid-template-columns:repeat(10,1fr)}.q{scroll-margin-top:110px}}
 @media print{.notice,#missingPanel,.home-link{display:none!important}.q{break-inside:avoid}.paperhead h2{font-size:22px}.option{padding:4px 8px;margin:3px 0}}
-</style></head><body>
+</style><link rel="stylesheet" href="./access.css"><script src="./access.js"></script></head><body>
+<section id="accessGate" aria-busy="true"><h2>科目名单验证</h2><p id="accessMessage">正在读取本科目的名单配置…</p><a id="accessLogin" class="gate-primary" href="./login.html?subject=auto">前往名单验证</a><a href="./index.html">返回科目首页</a><p class="muted">本版本仅在浏览器中核对预设姓名、手机号与科目，不发送短信，也不验证手机归属。</p><noscript><p>请启用 JavaScript，名单验证和考试答题才可运行。</p></noscript></section>
+
 <header class="top"><div><a class="home-link" href="./index.html">← 返回考试首页</a><h1>汽车维修智能机考系统</h1><small>满分100分 · 单选、多选、判断均可点击作答</small></div><div class="timer" id="timer" role="timer" aria-label="考试剩余时间">--:--</div></header>
 <main class="layout"><aside><div class="card side">
 <div id="settings"><h3 style="margin-top:0">考试设置</h3>
@@ -43,10 +45,11 @@ details{margin:14px 0}summary{cursor:pointer;font-weight:700}.side h3{font-size:
 <details><summary>模块权重设置</summary><div id="mods"></div><p class="muted">0表示排除模块。修改题型数量后合计仍需为100分；考试中不可修改设置。</p></details>
 <h3>答题卡</h3><p class="muted" id="navHint">默认颜色：未作答 · 蓝色：已作答。检查漏题后才标红。</p><div id="nav" class="navgrid"></div>
 <div id="missingPanel" hidden><p id="missingTitle"></p><div id="missingNums"></div></div>
-<p class="muted" id="saveNote">答题进度仅保存在当前浏览器。刷新可继续；后台停留和关闭页面期间倒计时不停。</p>
+<p class="muted" id="saveNote">答题进度按考生和科目分别保存在当前浏览器。刷新可继续；后台停留和关闭页面期间倒计时不停。</p>
 </div></aside><section>
+<div class="candidate-strip"><strong>当前考生</strong><span id="candidateInfo"></span><button id="logoutBtn" type="button">退出本科目</button></div>
 <div class="notice" id="studentNote">此页面用于自测 / 模拟机考，题库答案随网页加载，不能用于保密、防作弊考试。成绩不自动发送给老师。题目沿用原题库，专业答案和标准版本仍需教师复核。</div>
-<div class="notice" id="testNote" hidden><b>功能验证模式</b>：随机验证按钮会填写全部题目并交卷。此入口没有登录鉴权，访问链接的人均可使用；验证成绩不代表真实考试成绩。</div>
+<div class="notice" id="testNote" hidden><b>功能验证模式</b>：随机验证按钮会填写全部题目并交卷。此入口同样检查本科目名单，但只是前端入口校验；验证成绩不代表真实考试成绩。</div>
 <div id="stats" class="stats"></div><div class="card" id="exam"><div class="empty"><h2>准备开始考试</h2><p>默认40道单选、20道多选、20道判断，共80题 / 100分。</p><p>点击“开始新考试”，系统将抽题并开始倒计时。</p></div></div>
 </section></main>
 <noscript><p>请开启浏览器的 JavaScript 才能使用答题和评分功能。</p></noscript>
@@ -58,17 +61,29 @@ const types=['single','multiple','judge'];
 const modules=[...new Set(bank.map(q=>q.module))];
 const $=id=>document.getElementById(id);
 const TEST_MODE=new URLSearchParams(location.search).get('test')==='1';
-const STORAGE_KEY='auto-exam-pages-v1'+(TEST_MODE?'-verification':'');
+const EXAM_SUBJECT='auto';
+let examCandidate=null;
+let STORAGE_KEY='';
 let paper=[],user={},submitted=false,timerId=null,remaining=0,deadline=0;
 let examTitle='',examMinutes=60,examRule='strict',submitReason='',saveWarning=false;
 // 漏题检查前使用普通题号；每次成功开始新考试重置，刷新可恢复本次检查状态。
 let highlightMissing=false;
+
+// 校验当前科目的本地验证状态，不能使用另一科状态或另一考生记录。
+function ensureExamAccess(){
+  if(window.ExamAccess && window.ExamAccess.samePerson(window.ExamAccess.session(EXAM_SUBJECT),examCandidate))return true;
+  clearInterval(timerId);
+  if(window.ExamAccess)window.ExamAccess.blockExam(EXAM_SUBJECT,'本科目验证已失效或考生已变更，请重新进行名单验证。考试计时不会暂停。');
+  return false;
+}
+
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function points(q){return q.type==='multiple'?2:1;}
 function getWeights(){const w={};document.querySelectorAll('[data-mod]').forEach(x=>w[x.dataset.mod]=Number(x.value));return w;}
 function lockSettings(on){document.querySelectorAll('#settings input,#settings select,[data-mod]').forEach(x=>x.disabled=on);}
 function init(){
+  if(!ensureExamAccess())return false;
   $('mods').innerHTML=modules.map(m=>`<div class="module"><label>${esc(m)} (${bank.filter(q=>q.module===m).length}) <input aria-label="${esc(m)}权重" type="number" min="0" max="100" step="1" value="1" data-mod="${esc(m)}"></label></div>`).join('');
   $('verifyBtn').hidden=!TEST_MODE;
   $('testNote').hidden=!TEST_MODE;
@@ -92,6 +107,7 @@ function pick(type,n,w){
   return shuffle(out);
 }
 function startExam(force=false){
+  if(!ensureExamAccess())return false;
   if(paper.length&&!submitted&&!force&&!confirm('开始新考试会清空本次答题进度，确定继续吗？'))return false;
   const n=Object.fromEntries(types.map(t=>[t,Number($(t).value)]));
   if(types.some(t=>!Number.isInteger(n[t])||n[t]<0)||n.single+2*n.multiple+n.judge!==100){alert('题数需为非负整数，且总分必须是100分。推荐：40道单选、20道多选、20道判断。');return false;}
@@ -113,6 +129,7 @@ function startExam(force=false){
 }
 function startTimer(){clearInterval(timerId);tick();if(!submitted)timerId=setInterval(tick,500);}
 function tick(){
+  if(!ensureExamAccess())return false;
   if(!paper.length)return;
   if(!submitted)remaining=Math.max(0,Math.ceil((deadline-Date.now())/1000));
   $('timer').textContent=`${String(Math.floor(remaining/60)).padStart(2,'0')}:${String(remaining%60).padStart(2,'0')}`;
@@ -122,6 +139,7 @@ function tick(){
 function chosen(q,v){const a=user[q.id];return q.type==='multiple'?Array.isArray(a)&&a.includes(v):a===v;}
 function answered(q){const a=user[q.id];return q.type==='multiple'?Array.isArray(a)&&a.length>0:typeof a==='string'&&a.length>0;}
 function answer(id,v,on){
+  if(!ensureExamAccess())return false;
   if(submitted)return;
   if(Date.now()>=deadline){submitExam('timeout');return;}
   const q=paper.find(x=>x.id===id);if(!q)return;
@@ -159,7 +177,7 @@ function question(q){
   return h+'</div>';
 }
 function render(){
-  let h=`<div class="paperhead"><h2>${esc(examTitle)}</h2><div class="meta">共 ${paper.length} 题 · 满分100分 · ${examMinutes}分钟 · ${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}</div></div><div id="result"></div>`;
+  let h=`<div class="paperhead"><h2>${esc(examTitle)}</h2><p class="candidate-caption">考生：${esc(examCandidate.name)} · ${esc(examCandidate.maskedPhone)} · ${esc(ExamAccess.subjects[EXAM_SUBJECT])}</p><div class="meta">共 ${paper.length} 题 · 满分100分 · ${examMinutes}分钟 · ${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}</div></div><div id="result"></div>`;
   for(const t of types){const a=paper.filter(q=>q.type===t);if(a.length)h+=`<div class="sectiontitle">${names[t]}（${a.length}题，每题${t==='multiple'?2:1}分）</div>`+a.map(question).join('');}
   $('exam').innerHTML=h;renderResult();
 }
@@ -184,6 +202,7 @@ function stats(){
   $('downloadBtn').disabled=!submitted;
 }
 function showUnanswered(notify=true){
+  if(!ensureExamAccess())return false;
   if(!paper.length){alert('请先开始考试');return;}
   const list=paper.filter(q=>!answered(q));
   highlightMissing=true;
@@ -192,6 +211,7 @@ function showUnanswered(notify=true){
   if(list.length)goTo(list[0].id);
 }
 function submitExam(reason='manual'){
+  if(!ensureExamAccess())return false;
   if(!paper.length){alert('请先开始考试');return false;}
   if(submitted)return false;
   if(reason===false)reason='manual';if(reason===true)reason='timeout';
@@ -207,6 +227,7 @@ function renderResult(){
   $('result').innerHTML=`<div class="result"><p class="resultlabel">${label}</p><div class="resultbig">${s.score} <small>/ ${s.max} 分</small></div><p>全对 ${right} 题 · 部分得分 ${part} 题 · 答错 ${paper.length-right-part-missing} 题 · 未答 ${missing} 题</p><p class="muted">成绩仅保存在此浏览器。下方可查看题库答案和本次作答，亦可下载成绩单。原题答案未经逐题专业复核。</p></div>`;
 }
 function randomVerify(){
+  if(!ensureExamAccess())return false;
   if(!TEST_MODE)return;
   if(paper.length&&!confirm('将随机填写所有题目并交卷。若本卷已交卷则重新组卷；这是功能测试，不作为真实成绩。是否继续？'))return;
   if((!paper.length||submitted)&&!startExam(true))return;
@@ -216,14 +237,14 @@ function randomVerify(){
 }
 function save(){
   if(!paper.length)return;
-  try{localStorage.setItem(STORAGE_KEY,JSON.stringify({version:1,ids:paper.map(q=>q.id),user,submitted,deadline,remaining,examTitle,examMinutes,examRule,submitReason,highlightMissing}));}
+  try{localStorage.setItem(STORAGE_KEY,JSON.stringify({version:2,owner:{name:examCandidate.name,phone:examCandidate.phone,subject:EXAM_SUBJECT},ids:paper.map(q=>q.id),user,submitted,deadline,remaining,examTitle,examMinutes,examRule,submitReason,highlightMissing}));}
   catch(e){if(!saveWarning){saveWarning=true;$('saveNote').textContent='当前浏览器不允许本地保存；刷新会丢失进度，请保持本页打开。';}}
 }
 function restore(){
   try{
     const raw=localStorage.getItem(STORAGE_KEY);if(!raw)return;
     const d=JSON.parse(raw),byId=new Map(bank.map(q=>[q.id,q]));
-    if(d.version!==1||!Array.isArray(d.ids)||new Set(d.ids).size!==d.ids.length||d.ids.some(id=>!byId.has(id)))return;
+    if(d.version!==2||!ExamAccess.samePerson(d.owner,examCandidate)||!Array.isArray(d.ids)||new Set(d.ids).size!==d.ids.length||d.ids.some(id=>!byId.has(id)))return;
     const restored=d.ids.map((id,i)=>({...byId.get(id),no:i+1}));
     if(restored.reduce((n,q)=>n+points(q),0)!==100||!Number.isFinite(d.deadline)||!['strict','partial'].includes(d.examRule))return;
     paper=restored;user={};
@@ -236,18 +257,39 @@ function restore(){
     $('title').value=examTitle;$('minutes').value=examMinutes;$('multiScore').value=examRule;
     types.forEach(t=>$(t).value=paper.filter(q=>q.type===t).length);updateTotal();
     lockSettings(!submitted);render();nav();stats();
-    $('saveNote').textContent=submitted?'已恢复此浏览器上次的考试结果。':'已恢复此浏览器的作答进度，离开页面期间考试时间仍继续计算。';
+    $('saveNote').textContent=submitted?'已恢复当前考生在本科目的上次考试结果。':'已恢复当前考生在本科目的作答进度，离开页面期间考试时间仍继续计算。';
     if(submitted)tick();else startTimer();
   }catch(e){$('saveNote').textContent='上次保存的记录无法恢复，可重新开始考试。';}
 }
 function downloadResult(){
+  if(!ensureExamAccess())return false;
   if(!submitted){alert('交卷后才可下载成绩单');return;}
   const s=scoring();
-  const content=[examTitle,`分数：${s.score} / ${s.max}`,`交卷方式：${submitReason==='verify'?'随机验证（非真实成绩）':submitReason==='timeout'?'到时自动交卷':'手动交卷'}`,`计分规则：${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}`,'成绩由浏览器生成，未由服务器认证。','',...paper.map(q=>`${q.no}. [${names[q.type]}] ${q.stem}\n你的答案：${userText(q)||'未作答'}；题库答案：${correctText(q)}；得分：${earned(q)}/${points(q)}\n`)].join('\n');
+  const content=[examTitle,`考生：${examCandidate.name}`,`手机号：${examCandidate.maskedPhone}`,`科目：${ExamAccess.subjects[EXAM_SUBJECT]}`,`分数：${s.score} / ${s.max}`,`交卷方式：${submitReason==='verify'?'随机验证（非真实成绩）':submitReason==='timeout'?'到时自动交卷':'手动交卷'}`,`计分规则：${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}`,'成绩由浏览器生成，未由服务器认证。','',...paper.map(q=>`${q.no}. [${names[q.type]}] ${q.stem}\n你的答案：${userText(q)||'未作答'}；题库答案：${correctText(q)}；得分：${earned(q)}/${points(q)}\n`)].join('\n');
   const url=URL.createObjectURL(new Blob(['\ufeff'+content],{type:'text/plain;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='汽车维修_考试成绩.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&paper.length&&!submitted)tick();});
-init();
+// 在名单校验通过前不运行组卷、恢复考试或答题界面。
+if(window.ExamAccess){
+  ExamAccess.initializeExam(EXAM_SUBJECT).then(person=>{
+    if(!person)return;
+    examCandidate=person;
+    STORAGE_KEY=ExamAccess.progressKey(EXAM_SUBJECT,person,TEST_MODE);
+    $('candidateInfo').textContent=person.name+' · '+person.maskedPhone;
+    $('logoutBtn').addEventListener('click',()=>{
+      if(paper.length&&!submitted&&!confirm('退出后考试仍继续计时。当前进度保留，重新验证同一考生可继续。确定退出本科目？'))return;
+      if(ensureExamAccess())save();
+      clearInterval(timerId);ExamAccess.logout(EXAM_SUBJECT);
+      location.replace(ExamAccess.loginUrl(EXAM_SUBJECT,TEST_MODE));
+    });
+    init();
+    if(ensureExamAccess())document.documentElement.dataset.accessState='allowed';
+  }).catch(e=>ExamAccess.blockExam(EXAM_SUBJECT,e.message||'页面初始化失败，请刷新重试。'));
+  window.addEventListener('pageshow',event=>{if(event.persisted&&examCandidate)ensureExamAccess();});
+}else{
+  document.documentElement.dataset.accessState='blocked';
+  $('accessMessage').textContent='验证脚本未加载，请检查同目录的 access.js 和 whitelist.js 文件。';
+}
 
 </script></body></html>

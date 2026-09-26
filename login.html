@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="按考试科目核对预设姓名和手机号，进入对应科目练习。">
+<title>科目名单验证 · Exam Practice</title>
+<link rel="stylesheet" href="./access.css">
+<style>
+*{box-sizing:border-box}body{margin:0;color:#192b48;background:#f4f7fb;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:#2854d6}button,input{font:inherit}header{background:white;border-bottom:1px solid #e1e7f0}.bar{max-width:1120px;min-height:76px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;gap:12px;align-items:center;font-weight:750;color:inherit;text-decoration:none}.mark{width:38px;height:38px;background:#2455df;border-radius:11px;color:white;display:grid;place-items:center}.back{font-size:13px;text-decoration:none;color:#61718b}main{max-width:1120px;margin:0 auto;padding:56px 24px 28px}.login-layout{display:grid;grid-template-columns:1fr 460px;gap:62px;align-items:center}.eyebrow{color:#2754d7;font-size:12px;font-weight:750;letter-spacing:.12em}.intro h1{font-size:42px;line-height:1.3;letter-spacing:-.025em;margin:16px 0 20px}.intro>p{max-width:475px;font-size:15px;color:#61718b}.info-panel{margin:28px 0;padding:22px 24px;background:#eaf0fd;border:1px solid #d9e3fb;border-radius:14px}.info-panel h2{font-size:20px;margin:0 0 6px}.info-panel p{font-size:13px;color:#587092;margin:0}.metrics{display:flex;gap:36px;margin-top:20px}.metrics b{font-size:25px;display:block;line-height:1.3}.metrics small{font-size:12px;color:#6d7a8e}.independent{font-size:13px;color:#536783;display:flex;gap:10px;align-items:flex-start}.independent span{background:#fff;border:1px solid #dce4f3;color:#2854d7;font-weight:800;width:26px;height:26px;border-radius:8px;flex-shrink:0;text-align:center}.form-card{border:1px solid #dfe5ef;border-radius:18px;background:#fff;padding:30px;box-shadow:0 14px 36px #1933630a}.form-card h2{font-size:23px;margin:0 0 5px}.form-card .subtitle{color:#7a889e;font-size:13px;margin:0 0 23px}fieldset{margin:0 0 20px;padding:0;border:0}legend{padding:0;font-size:13px;font-weight:650;margin-bottom:9px}.subject-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.subject-choice{display:flex;align-items:center;gap:9px;border:1px solid #d5deed;border-radius:10px;padding:11px 12px;color:#53647f;font-size:14px;cursor:pointer}.subject-choice:has(input:checked){background:#eff4ff;border-color:#2455df;color:#214bc5;font-weight:700}.subject-choice input{accent-color:#2455df;margin:0;width:16px;height:16px}.field{margin:0 0 18px}.field label{font-size:13px;font-weight:650;display:block;margin-bottom:7px}.field input{width:100%;padding:12px 13px;border:1px solid #cfd9e7;border-radius:10px;background:#fbfcfe;font-size:15px;outline:none}.field input:focus{border-color:#2455df;box-shadow:0 0 0 3px #2455df17;background:#fff}.field small{font-size:11px;color:#8894a7;display:block;margin-top:6px}.submit{width:100%;background:#2455df;color:white;border:0;border-radius:10px;padding:13px 15px;font-weight:700;cursor:pointer}.submit:hover{background:#1c46c1}.submit:disabled{background:#a4b5e3;cursor:wait}.feedback{font-size:13px;min-height:23px;margin:12px 0 0;color:#b42318}.feedback.success{color:#17663d}.error-box{font-size:13px;padding:12px 14px;border:1px solid #fecaca;border-radius:9px;background:#fff1f2;color:#b42318;margin:0 0 20px;overflow-wrap:anywhere}.existing{padding:12px 14px;background:#f0fdf4;border:1px solid #c1e6cb;border-radius:10px;margin:0 0 18px;font-size:12px;color:#17663d}.existing-actions{display:flex;gap:16px;margin-top:8px}.existing button{border:0;background:transparent;color:#63798b;padding:0;cursor:pointer;font-size:12px}.mode-note{font-size:12px;background:#fff7ed;color:#984a17;padding:10px 12px;border-radius:9px;margin:0 0 16px;border:1px solid #fed7aa}.privacy{font-size:11px;color:#8491a4;margin:16px 0 0;line-height:1.8}.footer{font-size:12px;color:#7c8ba2;padding-top:36px;text-align:center}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #e5a624;outline-offset:3px}
+@media(max-width:870px){.login-layout{grid-template-columns:1fr 420px;gap:30px}.intro h1{font-size:35px}}
+@media(max-width:720px){main{padding:26px 18px}.bar{padding:13px 18px;min-height:65px}.brand{font-size:14px}.back{font-size:12px}.login-layout{grid-template-columns:1fr;gap:22px}.intro h1{font-size:29px;margin:8px 0 10px}.intro>p{margin:0;font-size:13px}.info-panel{display:none}.independent{margin-top:15px;font-size:12px}.form-card{padding:22px}.form-card h2{font-size:22px}.footer{padding-top:24px}.subject-choice{font-size:13px}}
+</style>
+<script src="./access.js"></script>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="./index.html"><span class="mark" aria-hidden="true">考</span>在线考试中心</a><a class="back" href="./index.html">← 返回科目首页</a></div></header>
+<main>
+<div class="login-layout">
+<section class="intro"><span class="eyebrow">按科目核对 · 分科独立名单</span><h1>选好科目，<br>核对你的考试信息。</h1><p>输入管理员预设的姓名和手机号，系统只在所选科目的名单内匹配。通过后，即可开始对应科目的练习。</p>
+<div class="info-panel"><h2 id="subjectHeading">汽车维修</h2><p id="subjectDescription">发动机、底盘、汽车电器等理论模块</p><div class="metrics"><div><b>100</b><small>试卷满分</small></div><div><b>80</b><small>默认题数</small></div><div><b>60</b><small>默认分钟</small></div></div></div>
+<div class="independent"><span>i</span><div>两科名单互不通用。<br>参加两科，需分别列入两份名单并完成对应科目验证。</div></div>
+</section>
+<section class="form-card" aria-labelledby="formHeading"><h2 id="formHeading">考生名单验证</h2><p class="subtitle">姓名 ＋ 手机号 ＋ 所选科目同时匹配</p>
+<div id="loadError" class="error-box" role="alert" hidden></div>
+<div id="verificationModeNote" class="mode-note" hidden>当前为随机答题功能验证入口，仍需匹配本科目名单；验证分数不是正式成绩。</div>
+<div id="existingSession" class="existing" hidden><span id="existingText"></span><div class="existing-actions"><a id="continueLink" href="./index.html">继续本科目 →</a><button id="clearSession" type="button">清除本科目验证</button></div></div>
+<form id="loginForm">
+<fieldset><legend>考试科目</legend><div class="subject-options"><label class="subject-choice"><input type="radio" name="subject" value="auto" checked>汽车维修</label><label class="subject-choice"><input type="radio" name="subject" value="marketing">商务营销</label></div></fieldset>
+<div class="field"><label for="candidateName">姓名</label><input id="candidateName" name="name" type="text" autocomplete="name" maxlength="80" placeholder="与所选科目名单中的姓名一致" required></div>
+<div class="field"><label for="candidatePhone">手机号</label><input id="candidatePhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" maxlength="25" placeholder="请输入预设的11位手机号" required><small>仅用于匹配名单，不发送短信、不验证手机归属。</small></div>
+<button id="verifyLoginBtn" class="submit" type="submit" disabled>正在读取名单…</button><p id="loginMessage" class="feedback" role="status" aria-live="polite"></p>
+</form>
+<p class="privacy">这是纯静态练习入口，不是安全身份认证。名单与题库会随页面公开下载，不适合敏感名单或保密考试。不会向老师自动上传成绩。</p>
+<noscript><p class="error-box">请启用 JavaScript 后进行验证和答题。</p></noscript>
+</section>
+</div><footer class="footer">Exam Practice · 原有100分制、漏题提醒与成绩查看功能保持不变</footer>
+</main>
+<script>
+(function(){
+  'use strict';
+  const byId=id=>document.getElementById(id),params=new URLSearchParams(location.search);
+  let loaded=false,busy=false;
+  const isTest=params.get('test')==='1';
+  const initial=params.get('subject')==='marketing'?'marketing':'auto';
+  document.querySelector('input[name="subject"][value="'+initial+'"]').checked=true;
+  byId('verificationModeNote').hidden=!isTest;
+  const current=()=>document.querySelector('input[name="subject"]:checked').value;
+  function message(text,ok=false){byId('loginMessage').textContent=text;byId('loginMessage').className='feedback'+(ok?' success':'');}
+  function update(){
+    const s=current(),name=s==='auto'?'汽车维修':'商务营销';
+    byId('subjectHeading').textContent=name;
+    byId('subjectDescription').textContent=s==='auto'?'发动机、底盘、汽车电器等理论模块':'电子商务、客户服务、市场调研等理论模块';
+    document.title=name+'名单验证 · Exam Practice';
+    if(loaded){
+      byId('verifyLoginBtn').textContent='验证并进入'+name;
+      const p=ExamAccess.session(s);byId('existingSession').hidden=!p;
+      if(p){byId('existingText').textContent='本科目已验证：'+p.name+' · '+p.maskedPhone;byId('continueLink').href=ExamAccess.examUrl(s,isTest);}
+    }
+  }
+  document.querySelectorAll('input[name="subject"]').forEach(el=>el.addEventListener('change',()=>{
+    message('');update();
+    try{const url=new URL(location.href);url.searchParams.set('subject',current());history.replaceState(null,'',url.href);}catch(_){}
+  }));
+  byId('clearSession').addEventListener('click',()=>{ExamAccess.logout(current());message('已清除本科目的验证状态。');update();});
+  byId('loginForm').addEventListener('submit',async event=>{
+    event.preventDefault();if(!loaded||busy)return;
+    const s=current();busy=true;byId('verifyLoginBtn').disabled=true;message('正在匹配本科目名单…');
+    try{
+      await ExamAccess.login(s,byId('candidateName').value,byId('candidatePhone').value);
+      message('匹配成功，正在进入'+ExamAccess.subjects[s]+'。',true);
+      location.assign(ExamAccess.examUrl(s,isTest));
+    }catch(e){message(e.message||'名单验证失败，请重试。');busy=false;byId('verifyLoginBtn').disabled=false;}
+  });
+  update();
+  if(!window.ExamAccess){byId('loadError').hidden=false;byId('loadError').textContent='未找到 access.js，请检查解压和上传是否完整。';return;}
+  ExamAccess.ready().then(()=>{loaded=true;byId('verifyLoginBtn').disabled=false;update();}).catch(e=>{
+    byId('loadError').hidden=false;byId('loadError').textContent=e.message;byId('verifyLoginBtn').textContent='名单不可用，请联系管理员';
+  });
+  window.addEventListener('pageshow',()=>{if(loaded)update();});
+})();
+</script>
+</body></html>

@@ -3,14 +3,38 @@
 <style>
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;color:#18243b;background:#f4f7fb;line-height:1.7}a{color:inherit}header{background:#fff;border-bottom:1px solid #e1e7f0}.bar{max-width:1120px;margin:auto;min-height:76px;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{display:flex;gap:12px;align-items:center;font-weight:750;letter-spacing:.03em}.mark{background:#1f51e5;width:38px;height:38px;border-radius:11px;display:grid;place-items:center;color:white;font-weight:800}.bar small{color:#66758c}main{max-width:1120px;margin:0 auto;padding:60px 24px 30px}.eyebrow{font-size:12px;color:#2754d7;letter-spacing:.14em;font-weight:700}.hero h1{font-size:42px;line-height:1.25;margin:12px 0 18px;letter-spacing:-.03em}.hero p{color:#61718b;max-width:620px;margin:0;font-size:16px}.steps{display:flex;gap:12px;margin:28px 0 46px;flex-wrap:wrap}.step{background:#eaf0fd;border:1px solid #dfe7fc;color:#355698;font-size:13px;border-radius:8px;padding:7px 13px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}.section-head h2{font-size:20px;margin:0}.count{font-size:12px;color:#61718b}.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:#fff;border:1px solid #dfe5ef;border-radius:18px;padding:30px;box-shadow:0 7px 24px #15265a05}.card .label{background:#eef4ff;color:#2c54c0;border-radius:6px;font-size:12px;padding:5px 9px;display:inline-block}.card h3{font-size:25px;margin:16px 0 8px}.card p{color:#6d7a8d;font-size:14px;margin:0}.metrics{display:flex;gap:38px;padding:24px 0;margin-bottom:12px}.metrics b{display:block;color:#1b2d50;font-size:26px;line-height:1.2}.metrics small{font-size:12px;color:#7c889b}.button{display:block;text-align:center;text-decoration:none;background:#2455df;border:1px solid #2455df;border-radius:10px;color:white;padding:12px 16px;font-size:15px;font-weight:700;transition:background .2s}.button:hover{background:#173bb0}.button:focus-visible,a:focus-visible{outline:3px solid #f59e0b;outline-offset:4px}.secondary{display:block;color:#627088;text-decoration:underline;font-size:12px;margin-top:14px;text-align:center}.placeholder{background:#f9fbfe;box-shadow:none;display:flex;flex-direction:column;justify-content:center;min-height:300px}.placeholder h3{font-size:20px}.plus{font-size:26px;color:#94a3b8;width:45px;height:45px;border:1px dashed #c7d1df;border-radius:12px;display:grid;place-items:center}.placeholder p{margin-top:5px}.placeholder .waiting{align-self:flex-start;border:1px solid #dce4ef;padding:5px 10px;border-radius:6px;font-size:12px;color:#8490a4;margin-top:22px}.note{margin:26px 0;padding:19px 22px;border-radius:12px;background:#edf2f9;border:1px solid #e0e7f2;font-size:13px;color:#64748b}.note strong{color:#354765}.note p{margin:4px 0 0}footer{text-align:center;color:#8090a6;font-size:12px;padding:20px}.howto{font-size:13px;color:#61718b;margin-top:18px}
 @media(max-width:700px){.bar{padding:15px 20px}.bar small{font-size:11px}main{padding:35px 20px 20px}.hero h1{font-size:32px}.hero p{font-size:14px}.steps{gap:7px;margin-bottom:28px}.step{font-size:11px;padding:6px 9px}.grid{grid-template-columns:1fr;gap:14px}.card{padding:22px}.metrics{gap:35px}.placeholder{min-height:190px}.section-head h2{font-size:18px}.note{padding:15px}}
-</style></head><body>
-<header><div class="bar"><div class="brand"><span class="mark" aria-hidden="true">考</span>在线考试中心</div><small>选择科目 · 自主测评</small></div></header>
-<main><section class="hero"><span class="eyebrow">在线模拟机考</span><h1>从这里，开始你的考试。</h1><p>汽车维修、商务营销两科独立题库，随机生成100分试卷。直接点击选项作答，检查漏题后标红，交卷后即时查看分数。</p><div class="steps"><span class="step">01　选择考试科目</span><span class="step">02　开始计时答题</span><span class="step">03　检查漏题并交卷</span><span class="step">04　查看成绩与答案</span></div></section>
+</style><link rel="stylesheet" href="./access.css"><script src="./access.js"></script></head><body>
+<header><div class="bar"><div class="brand"><span class="mark" aria-hidden="true">考</span>在线考试中心</div><small>分科名单 · 自主测评</small></div></header>
+<main><section class="hero"><span class="eyebrow">在线模拟机考</span><h1>从这里，开始你的考试。</h1><p>先选择科目，再核对姓名和手机号。两门考试分别使用各自的白名单，通过本科目名单验证后进入100分模拟机考。</p><div class="steps"><span class="step">01　选择对应科目</span><span class="step">02　姓名＋手机号核对</span><span class="step">03　答题并检查漏题</span><span class="step">04　交卷查看成绩</span></div></section>
 <section aria-label="考试科目"><div class="section-head"><h2>选择考试科目</h2><span class="count">当前可用 2 科</span></div><div class="grid">
-<article class="card"><span class="label">汽车修理类 · 理论模拟考试</span><h3>汽车维修</h3><p>职业道德、发动机、底盘、汽车电器等模块。沿用上版796题。</p><div class="metrics"><div><b>100</b><small>试卷满分</small></div><div><b>80</b><small>默认题数</small></div><div><b>60</b><small>默认分钟</small></div></div><a class="button" href="./auto-exam.html">进入汽车维修考试 →</a><a class="secondary" href="./auto-exam.html?test=1">功能验证入口（随机答题并交卷，非真实考试）</a></article>
-<article class="card"><span class="label">商务营销类 · 理论模拟考试</span><h3>商务营销</h3><p>营销素养、电子商务、市场调研、客户服务等模块。独立导入原文800题。</p><div class="metrics"><div><b>100</b><small>试卷满分</small></div><div><b>80</b><small>默认题数</small></div><div><b>60</b><small>默认分钟</small></div></div><a class="button" href="./marketing-exam.html">进入商务营销考试 →</a><a class="secondary" href="./marketing-exam.html?test=1">功能验证入口（随机答题并交卷，非真实考试）</a></article>
+<article class="card"><span class="label">汽车修理类 · 理论模拟考试</span><h3>汽车维修</h3><p>职业道德、发动机、底盘、汽车电器等模块。沿用上版796题。</p><div class="metrics"><div><b>100</b><small>试卷满分</small></div><div><b>80</b><small>默认题数</small></div><div><b>60</b><small>默认分钟</small></div></div><p id="autoAccessStatus" class="subject-access-status">本科目需要单独验证姓名与手机号</p><a id="autoAccessLink" class="button" href="./login.html?subject=auto">验证并进入汽车维修 →</a><a class="secondary" href="./login.html?subject=auto&amp;test=1">功能验证入口（随机答题并交卷，非真实考试）</a></article>
+<article class="card"><span class="label">商务营销类 · 理论模拟考试</span><h3>商务营销</h3><p>营销素养、电子商务、市场调研、客户服务等模块。独立导入原文800题。</p><div class="metrics"><div><b>100</b><small>试卷满分</small></div><div><b>80</b><small>默认题数</small></div><div><b>60</b><small>默认分钟</small></div></div><p id="marketingAccessStatus" class="subject-access-status">本科目需要单独验证姓名与手机号</p><a id="marketingAccessLink" class="button" href="./login.html?subject=marketing">验证并进入商务营销 →</a><a class="secondary" href="./login.html?subject=marketing&amp;test=1">功能验证入口（随机答题并交卷，非真实考试）</a></article>
 </div></section>
-<div class="note"><strong>考试与数据说明</strong><p>每个浏览器独立组卷、作答和评分；进度与结果仅保存在当前浏览器，可下载成绩单，不自动汇总给老师。题库答案随网页加载，本版本适合练习和模拟，不适合保密、防作弊正式考试。两门考试的进度分别保存，互不覆盖；保留原题库答案，内容与适用版本需教师复核。</p></div>
-<p class="howto">首次使用：点击“进入考试”，确认设置后点“开始新考试”。有未答题时，手动交卷会提示具体题号；考试到时则按现有作答自动交卷。</p>
+<div class="access-footer-actions"><button id="logoutAllBtn" type="button" hidden>退出全部科目验证</button></div>
+<div class="note"><strong>名单与数据说明</strong><p>静态名单会公开加载，仅用于练习入口筛选，不是安全登录；本版本不发送短信，也不验证手机号归属。每个浏览器独立组卷、作答和评分；进度与结果仅保存在当前浏览器，可下载成绩单，不自动汇总给老师。题库答案随网页加载，本版本适合练习和模拟，不适合保密、防作弊正式考试。进度按考生和科目分别保存，互不覆盖；保留原题库答案，内容与适用版本需教师复核。</p></div>
+<p class="howto">首次使用：选择科目 → 输入姓名和手机号 → 名单匹配 → 点击“开始新考试”。已验证另一科，也需在本科目名单中匹配。有未答题时，手动交卷会提示具体题号；考试到时则按现有作答自动交卷。</p>
 </main><footer>在线模拟机考 · 无需安装</footer>
-</body></html>
+<script>
+(function(){
+  const subjects=['auto','marketing'];
+  async function refreshStatus(){
+    try{
+      if(!window.ExamAccess)throw new Error('验证脚本未加载，请检查 access.js。');
+      await ExamAccess.ready();let any=false;
+      for(const s of subjects){
+        const p=ExamAccess.session(s),el=document.getElementById(s+'AccessStatus'),link=document.getElementById(s+'AccessLink');
+        el.classList.toggle('verified',!!p);
+        el.textContent=p?'本科目已验证：'+p.name+' · '+p.maskedPhone:'本科目需要单独验证姓名与手机号';
+        link.href=p?ExamAccess.examUrl(s):ExamAccess.loginUrl(s);
+        link.textContent=p?'进入'+ExamAccess.subjects[s]+'考试 →':'验证并进入'+ExamAccess.subjects[s]+' →';
+        any=any||!!p;
+      }
+      document.getElementById('logoutAllBtn').hidden=!any;
+    }catch(e){subjects.forEach(s=>document.getElementById(s+'AccessStatus').textContent=e.message);}
+  }
+  document.getElementById('logoutAllBtn').onclick=()=>{if(window.ExamAccess)ExamAccess.logout();refreshStatus();};
+  window.addEventListener('pageshow',refreshStatus);
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)refreshStatus();});
+  refreshStatus();
+})();
+</script></body></html>

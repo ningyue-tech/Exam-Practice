@@ -1,0 +1,16 @@
+/* 名单入口及科目验证；不替换原有答题样式。 */
+[hidden]{display:none!important}
+html[data-access-state]:not([data-access-state="allowed"]) body>.top,
+html[data-access-state]:not([data-access-state="allowed"]) body>.layout{display:none!important}
+html[data-access-state="allowed"] #accessGate{display:none!important}
+#accessGate{max-width:620px;margin:12vh auto;padding:32px;background:#fff;border:1px solid #dfe5ef;border-radius:16px;line-height:1.8;color:#18243b}
+#accessGate h2{margin:0 0 10px;font-size:24px}#accessGate a{display:inline-block;margin:12px 16px 0 0;color:#2455df}#accessGate p{overflow-wrap:anywhere}
+#accessGate .gate-primary{background:#2455df;color:#fff;border-radius:9px;padding:10px 16px;text-decoration:none}
+.candidate-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px;padding:11px 12px;background:#eef4ff;border:1px solid #dce7ff;border-radius:9px;font-size:13px}
+.candidate-strip strong{color:#2447a7}.candidate-strip button{margin-left:auto;border:1px solid #cbd5e1;border-radius:7px;background:#fff;color:#475569;padding:5px 9px;cursor:pointer}
+.candidate-caption{display:block;margin-top:7px;font-size:12px;color:#64748b}
+.subject-access-status{margin:16px 0 10px!important;padding:8px 10px;border:1px solid #e2e8f0;border-radius:8px;background:#f8fafc;font-size:12px!important}
+.subject-access-status.verified{background:#f0fdf4;border-color:#bde4ca;color:#17663d!important}
+.access-footer-actions{display:flex;justify-content:flex-end;margin-top:16px}.access-footer-actions button{border:1px solid #cbd5e1;border-radius:8px;padding:8px 12px;background:white;color:#475569;cursor:pointer}
+@media(max-width:680px){#accessGate{margin:8vh 18px;padding:23px}.candidate-strip{font-size:12px}}
+@media print{.candidate-strip button{display:none!important}.candidate-strip{border:none;background:transparent}}
