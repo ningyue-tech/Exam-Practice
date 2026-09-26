@@ -1,0 +1,163 @@
+{
+  "status": "source-imported-structurally-checked-not-professionally-verified",
+  "sourceFile": "商务营销类_.doc",
+  "sourceSha256": "d52eba6b657e2f88fc783393b49ac9909cee72643d0219abc6803ad2a160abb7",
+  "questionCount": 800,
+  "types": {
+    "single": 530,
+    "multiple": 54,
+    "judge": 216
+  },
+  "groups": [
+    {
+      "index": 1,
+      "label": "营销人员职业素养",
+      "count": 38,
+      "types": {
+        "single": 26,
+        "multiple": 2,
+        "judge": 10
+      }
+    },
+    {
+      "index": 2,
+      "label": "电子商务基础",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 3,
+      "label": "电子商务模式",
+      "count": 97,
+      "types": {
+        "single": 64,
+        "multiple": 7,
+        "judge": 26
+      }
+    },
+    {
+      "index": 4,
+      "label": "电子商务物流",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 5,
+      "label": "劳动与环保法律知识",
+      "count": 37,
+      "types": {
+        "single": 25,
+        "multiple": 2,
+        "judge": 10
+      }
+    },
+    {
+      "index": 6,
+      "label": "客户服务与消费者行为",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 7,
+      "label": "市场细分与目标市场",
+      "count": 74,
+      "types": {
+        "single": 48,
+        "multiple": 6,
+        "judge": 20
+      }
+    },
+    {
+      "index": 8,
+      "label": "市场调查与调研",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 9,
+      "label": "产品、品牌与定价",
+      "count": 131,
+      "types": {
+        "single": 85,
+        "multiple": 10,
+        "judge": 36
+      }
+    },
+    {
+      "index": 10,
+      "label": "市场营销基础",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 11,
+      "label": "市场营销环境",
+      "count": 48,
+      "types": {
+        "single": 32,
+        "multiple": 3,
+        "judge": 13
+      }
+    },
+    {
+      "index": 12,
+      "label": "网络营销",
+      "count": 97,
+      "types": {
+        "single": 64,
+        "multiple": 7,
+        "judge": 26
+      }
+    },
+    {
+      "index": 13,
+      "label": "职业健康与安全",
+      "count": 38,
+      "types": {
+        "single": 26,
+        "multiple": 2,
+        "judge": 10
+      }
+    }
+  ],
+  "checks": {
+    "questionStarts": 800,
+    "answerCount": 800,
+    "allChoiceQuestionsHaveABCD": true,
+    "nonEmptyStemsOptions": true,
+    "answerKeysValid": true,
+    "questionSequenceContinuousPerGroup": true
+  },
+  "notes": [
+    "来源题干、选项、答案未作专业改写或纠错，仅整理显示空白与题号。",
+    "按原文13组连续编号分组，模块名称是整理标签，不是原文标题或官方考纲。",
+    "重复原题保留，不擅自去重；存疑答案未擅自修改。",
+    "汽车科沿用上版796条，未重新全文抽取。"
+  ],
+  "exactDuplicateSets": [
+    [
+      100,
+      140
+    ]
+  ]
+}
