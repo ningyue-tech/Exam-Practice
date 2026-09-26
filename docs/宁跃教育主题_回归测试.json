@@ -1,0 +1,352 @@
+{
+  "scope": "Chromium 离线DOM与交互回归检查。受浏览器导航限制，资源以内联本地内容载入，使用内存模拟sessionStorage/localStorage；不含GitHub Pages线上或真实浏览器存储兼容性验收。",
+  "total": 69,
+  "passed": 69,
+  "results": [
+    {
+      "name": "whitelist.js 原文件逐字节保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "access.js 原文件逐字节保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto-exam.html 题库及答案保持不变",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto-exam.html 题库数量核对",
+      "passed": true,
+      "detail": 796
+    },
+    {
+      "name": "marketing-exam.html 题库及答案保持不变",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing-exam.html 题库数量核对",
+      "passed": true,
+      "detail": 800
+    },
+    {
+      "name": "真实登录表单：错误名单显示拒绝信息",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "错误姓名+手机号不能建立状态",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "汽车名单可完成汽车验证",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "汽车验证不授权营销科目",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "汽车人员不能验证营销科目",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "手机号在界面用掩码返回",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "营销名单与手机号规范化保持",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 未验证时显示验证入口",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 正确状态下可进入",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 宁跃品牌已显示",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 默认设置为100分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 成功抽取80题且满分100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 开始没有红色漏题标记",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 三种选项控件类型正常",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 漏题阻止手动交卷并提示题号",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 全部80个漏题号检查后标红",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 补答即时消除该题红色",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto multiple 可直接选择作答",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 多选清空恢复漏题标记",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto judge 可直接选择作答",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 刷新恢复原试卷、作答和检查状态",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 重开清除红色、作答和漏题面板",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 全对按原逻辑评分100分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 成绩页使用宁跃品牌",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 提交后答案锁定",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 重开页面能恢复100分成绩",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 到时自动交卷并保留未答结果",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 无JavaScript运行错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "auto 多选漏选半分规则保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 随机验证填写全部并自动交卷",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 手机默认折叠设置但可开始",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 手机页面无横向溢出",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "auto 手机操作无脚本错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "marketing 未验证时显示验证入口",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 正确状态下可进入",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 宁跃品牌已显示",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 默认设置为100分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 成功抽取80题且满分100",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 开始没有红色漏题标记",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 三种选项控件类型正常",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 漏题阻止手动交卷并提示题号",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 全部80个漏题号检查后标红",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 补答即时消除该题红色",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing multiple 可直接选择作答",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 多选清空恢复漏题标记",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing judge 可直接选择作答",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 刷新恢复原试卷、作答和检查状态",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 重开清除红色、作答和漏题面板",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 全对按原逻辑评分100分",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 成绩页使用宁跃品牌",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 提交后答案锁定",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 重开页面能恢复100分成绩",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 到时自动交卷并保留未答结果",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 无JavaScript运行错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "marketing 多选漏选半分规则保留",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 随机验证填写全部并自动交卷",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 手机默认折叠设置但可开始",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 手机页面无横向溢出",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "marketing 手机操作无脚本错误",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "首页显示两个独立已验证状态",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "退出全部科目状态正常清除",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "所有静态页面资源与站内路径可对应本包文件",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "未加入示例电话、邮箱、地址或备案号",
+      "passed": true,
+      "detail": null
+    }
+  ]
+}
