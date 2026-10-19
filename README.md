@@ -79,6 +79,7 @@ docs/                      导入核对及检查报告
 node scripts/test-exams.mjs
 node scripts/test-roster.mjs
 node scripts/test-whitelist-tool.mjs
+node scripts/test-login-ui.mjs
 ```
 
 回归检查覆盖原题库结构、名单兼容、跨科拦截、进度隔离、英语资源、完整组卷、计分和恢复；结果写入 `docs/english-regression.json`。浏览器验收另记录于 `docs/english-browser-checks.json`。

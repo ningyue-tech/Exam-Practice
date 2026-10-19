@@ -4,7 +4,7 @@
 (function(){
   'use strict';
   const byId=id=>document.getElementById(id),params=new URLSearchParams(location.search);
-  let loaded=false,busy=false;
+  let loaded=false,busy=false,loginGeneration=0;
   const isTest=params.get('test')==='1';
   const subjectInfo={
     auto:{name:'汽车科目组',description:'发动机、底盘、汽车电器等理论模块',metrics:[['100','分'],['80','题'],['60','分钟']]},
@@ -71,18 +71,28 @@
   byId('clearSession').addEventListener('click',()=>{ExamAccess.logout(current());message('已清除本科目的验证状态。');update();});
   byId('loginForm').addEventListener('submit',async event=>{
     event.preventDefault();if(!loaded||busy)return;
-    const s=current();busy=true;byId('verifyLoginBtn').disabled=true;message('正在匹配本科目名单…');
+    const s=current(),generation=++loginGeneration;busy=true;byId('verifyLoginBtn').disabled=true;message('正在匹配本科目名单…');
     try{
       await ExamAccess.login(s,byId('candidateName').value,byId('candidatePhone').value);
+      if(generation!==loginGeneration)return;
       message('匹配成功，正在进入'+ExamAccess.subjects[s]+'。',true);
       location.assign(ExamAccess.examUrl(s,isTest));
-    }catch(e){message(e.message||'名单验证失败，请重试。');busy=false;byId('verifyLoginBtn').disabled=false;}
+    }catch(e){
+      if(generation!==loginGeneration)return;
+      message(e.message||'名单验证失败，请重试。');busy=false;byId('verifyLoginBtn').disabled=false;
+    }
   });
   update();
   if(!window.ExamAccess){byId('loadError').hidden=false;byId('loadError').textContent='未找到 access.js，请检查解压和上传是否完整。';return;}
   ExamAccess.ready().then(()=>{loaded=true;byId('verifyLoginBtn').disabled=false;update();}).catch(e=>{
     byId('loadError').hidden=false;byId('loadError').textContent=e.message;byId('verifyLoginBtn').textContent='名单不可用，请联系管理员';
   });
-  window.addEventListener('pageshow',()=>{if(loaded)update();});
+  window.addEventListener('pageshow',event=>{
+    if(event.persisted){
+      // Back/forward cache also restores the disabled button and pending handlers.
+      loginGeneration++;busy=false;byId('verifyLoginBtn').disabled=!loaded;message('');
+    }
+    if(loaded)update();
+  });
 })();
 </script></body></html>
