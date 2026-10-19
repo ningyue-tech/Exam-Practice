@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-19",
+  "passed": true,
+  "previousCommit": "a35d723",
+  "sourceRosterCommit": "f49b6a6",
+  "schemaVersion": 3,
+  "credential": "name-phone-last6",
+  "correctionRequests": 6,
+  "changedCredentials": 6,
+  "importedStudents": 31,
+  "subjectsPerStudent": 3,
+  "studentPermissionRecords": 93,
+  "preservedDemoRecords": 5,
+  "totalRecords": 98,
+  "counts": {
+    "auto": 33,
+    "marketing": 33,
+    "english": 32
+  },
+  "validStudentLogins": 93,
+  "validDemoLogins": 5,
+  "rejectedSupersededLogins": 18,
+  "revokedSupersededSessions": 6,
+  "retainedVerifiers": 30,
+  "newVerifiers": 68,
+  "nameAndLast6Collisions": 0,
+  "distinctSalts": 98,
+  "rosterContainsNoPlaintextIdentities": true,
+  "nodeWebCryptoValidationMs": 73434,
+  "limitations": [
+    "Browser UI and mobile performance not verified",
+    "Previous Git commits still contain plaintext roster"
+  ],
+  "automatedChecks": {
+    "roster": {
+      "passed": 67,
+      "failed": 0
+    },
+    "exams": {
+      "passed": 45,
+      "failed": 0
+    }
+  }
+}
