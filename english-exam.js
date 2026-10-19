@@ -138,7 +138,7 @@
   }
   function renderPaper() {
     const paper = state.paper;
-    let html = '<div class="paperhead"><h2>' + esc(state.title) + '</h2><p class="candidate-caption">考生：' + esc(candidate.name) + ' · ' + esc(candidate.maskedPhone) + ' · 英语科目组</p><div class="meta">' + (state.mode === 'practice' ? '分项练习' : '自定义模拟') + ' · 共' + paper.questions.length + '小题 · 满分' + paper.max + '分 · ' + state.minutes + '分钟<br>练习计分：每小题2分，答错或未答不得分；材料题整组保留。</div></div><div id="result"></div>';
+    let html = '<div class="paperhead"><h2>' + esc(state.title) + '</h2><p class="candidate-caption">考生：' + esc(candidate.name) + ' · ' + esc(candidate.maskedPhone) + ' · 英语</p><div class="meta">' + (state.mode === 'practice' ? '分项练习' : '自定义模拟') + ' · 共' + paper.questions.length + '小题 · 满分' + paper.max + '分 · ' + state.minutes + '分钟<br>练习计分：每小题2分，答错或未答不得分；材料题整组保留。</div></div><div id="result"></div>';
     const questions = new Map(paper.questions.map(question => [question.id, question]));
     let lastSection = '';
     paper.groups.forEach(group => {
@@ -258,14 +258,14 @@
     if (!authorized() || !state || !state.submitted) return;
     const score = Engine.scorePaper(state.paper, state.answers);
     const groups = new Map(state.paper.groups.map(group => [group.id, group]));
-    const content = ['宁跃教育 · 英语练习成绩单', state.title, '考生：' + candidate.name, '手机号：' + candidate.maskedPhone, '科目：英语科目组', '分数：' + score.score + ' / ' + score.max,
+    const content = ['宁跃教育 · 英语练习成绩单', state.title, '考生：' + candidate.name, '手机号：' + candidate.maskedPhone, '科目：英语', '分数：' + score.score + ' / ' + score.max,
       '模式：' + (TEST_MODE ? '功能验证（非真实成绩）' : '普通练习'), '练习计分：每小题2分；答错或未答不得分。',
       '交卷方式：' + (state.submitReason === 'timeout' ? '时间到自动交卷' : state.submitReason === 'verify' ? '随机答题验证' : '手动交卷'),
       '答对：' + score.correct + '；答错：' + score.wrong + '；未答：' + score.missing, '成绩由当前浏览器生成。', '',
       ...Object.values(score.sections).map(section => section.title + '：' + section.score + ' / ' + section.max + '分'), '',
       ...state.paper.questions.map(q => q.no + '. [' + q.sectionTitle + '] ' + groups.get(q.groupId).title + (q.number ? ' / 原题号' + q.number : '') + '\n' + q.prompt + '\n你的答案：' + answerText(q, state.answers[q.id]) + '；题库答案：' + answerText(q, q.answer) + '；得分：' + (state.answers[q.id] === q.answer ? Engine.POINTS : 0) + '/' + Engine.POINTS + '\n')].join('\n');
     const url = URL.createObjectURL(new Blob(['\ufeff' + content], {type:'text/plain;charset=utf-8'}));
-    const anchor = document.createElement('a'); anchor.href = url; anchor.download = '宁跃教育_英语科目组_练习成绩.txt';
+    const anchor = document.createElement('a'); anchor.href = url; anchor.download = '宁跃教育_英语_练习成绩.txt';
     document.body.appendChild(anchor); anchor.click(); anchor.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
   async function printPaper() {
