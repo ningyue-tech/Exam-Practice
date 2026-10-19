@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import { pbkdf2Sync, randomBytes, webcrypto } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -18,8 +19,8 @@ const read = name => fs.readFileSync(path.join(root, name), 'utf8');
 function accessHarness(config) {
   const storage = new Map();
   const sandbox = {
-    URL, URLSearchParams, setTimeout, clearTimeout, Date, console,
-    window: { EXAM_WHITELISTS: config },
+    URL, URLSearchParams, setTimeout, clearTimeout, Date, console, TextEncoder, crypto: webcrypto,
+    window: { EXAM_WHITELISTS: config, crypto: webcrypto },
     sessionStorage: {
       getItem: key => storage.get(key) ?? null,
       setItem: (key, value) => storage.set(key, value),
@@ -34,12 +35,20 @@ function accessHarness(config) {
   vm.runInNewContext(read('access.js'), sandbox);
   return { api: sandbox.window.ExamAccess, storage };
 }
-const person = (name, phone, enabled = true) => ({ name, phone, enabled });
+const person = (subject, name, phone, enabled = true) => {
+  const salt = randomBytes(16).toString('hex');
+  const input = JSON.stringify(['exam-whitelist-v2', subject, name, phone]);
+  const hash = pbkdf2Sync(input, Buffer.from(salt, 'hex'), 600000, 32, 'sha256').toString('hex');
+  return { salt, hash, enabled };
+};
 const config = {
+  version: 2,
+  algorithm: 'PBKDF2-SHA-256',
+  iterations: 600000,
   sessionHours: 12,
-  auto: [person('汽车测试', '13800000001')],
-  marketing: [person('营销测试', '13800000002')],
-  english: [person('英语测试', '13800000004'), person('停用测试', '13800000005', false)],
+  auto: [person('auto', '汽车测试', '13800000001')],
+  marketing: [person('marketing', '营销测试', '13800000002')],
+  english: [person('english', '英语测试', '13800000004'), person('english', '停用测试', '13800000005', false)],
 };
 const { api, storage } = accessHarness(config);
 await api.ready();
@@ -81,8 +90,10 @@ check('已过期的英语会话失效', () => {
   storage.set(key, JSON.stringify(value));
   assert.equal(api.session('english'), null);
 });
-await checkAsync('旧名单未配置英语时不影响原两科', async () => {
-  const old = accessHarness({ sessionHours: 12, auto: config.auto, marketing: config.marketing }).api;
+await checkAsync('v2名单未配置英语时不影响原两科', async () => {
+  const legacy = { ...config };
+  delete legacy.english;
+  const old = accessHarness(legacy).api;
   await old.ready();
   assert.equal((await old.login('auto', '汽车测试', '13800000001')).subject, 'auto');
   await assert.rejects(old.login('english', '英语测试', '13800000004'));

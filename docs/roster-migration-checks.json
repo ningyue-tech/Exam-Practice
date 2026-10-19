@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-19",
+  "passed": true,
+  "sourceCommit": "f49b6a6",
+  "students": 31,
+  "records": 36,
+  "counts": {
+    "auto": 27,
+    "marketing": 8,
+    "english": 1
+  },
+  "validLogins": 36,
+  "originalPermissionsAndEnabledPreserved": true,
+  "rosterContainsNoPlaintextIdentities": true,
+  "sessionRefreshAndProgressKeysPreserved": true,
+  "nodeWebCryptoTimings": {
+    "allLoginMs": 11020,
+    "autoWrongLoginMs": 614
+  },
+  "limitations": [
+    "Browser UI and low-end mobile timing not verified",
+    "Previous Git commits still contain plaintext roster; repository must remain private until history is handled"
+  ]
+}
