@@ -1,12 +1,12 @@
 /*
- * 双科目独立名单：纯浏览器入口校验，不是安全认证。
+ * 分科目独立名单：纯浏览器入口校验，不是安全认证。
  * 不发送短信；名单及题库可被下载，前端校验可被绕过。
  * 预设人员只改同目录 whitelist.js。无第三方依赖。
  */
 (function () {
   'use strict';
-  const SUBJECTS = Object.freeze({auto: '汽车科目组', marketing: '市场营销科目组'});
-  const FILES = Object.freeze({auto: 'auto-exam.html', marketing: 'marketing-exam.html'});
+  const SUBJECTS = Object.freeze({auto: '汽车科目组', marketing: '市场营销科目组', english: '英语科目组'});
+  const FILES = Object.freeze({auto: 'auto-exam.html', marketing: 'marketing-exam.html', english: 'english-exam.html'});
   const base = new URL('./', document.currentScript.src);
   const prefix = 'exam-practice-whitelist-v1:' + encodeURIComponent(base.pathname) + ':';
   let config = null, loading = null;
@@ -29,9 +29,11 @@
       throw new Error('whitelist.js 的 sessionHours 应为大于0且不超过168的数字。');
     const result={sessionHours:hours};
     for(const s of Object.keys(SUBJECTS)) {
-      if(!Array.isArray(raw[s])) throw new Error('whitelist.js 缺少 '+s+' 名单数组。');
+      // 旧版名单没有英语数组时，仅关闭英语授权，不影响原有两科。
+      const rows=s==='english' && raw[s]===undefined ? [] : raw[s];
+      if(!Array.isArray(rows)) throw new Error('whitelist.js 缺少 '+s+' 名单数组。');
       const seen = new Set();
-      result[s]=raw[s].map((r,i) => {
+      result[s]=rows.map((r,i) => {
         if(!r || typeof r.name !== 'string' || typeof r.phone !== 'string')
           throw new Error(SUBJECTS[s]+'名单第'+(i+1)+'条：姓名和手机号须为字符串。');
         const name=normalizeName(r.name), phone=normalizePhone(r.phone);
@@ -129,7 +131,7 @@
   async function initializeExam(s) {
     try{
       await ready();const p=session(s);
-      if(!p){blockExam(s,'请先完成'+(SUBJECTS[s]||'所选科目')+'名单验证；另一科的验证状态不能代替本科目。');return null;}
+      if(!p){blockExam(s,'请先完成'+(SUBJECTS[s]||'所选科目')+'名单验证；其他科目的验证状态不能代替本科目。');return null;}
       return p;
     }catch(e){blockExam(s,e.message);return null;}
   }

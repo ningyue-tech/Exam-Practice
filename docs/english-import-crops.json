@@ -1,0 +1,4877 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "src": "assets/english/pronunciation/001-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        185,
+        1435,
+        384
+      ],
+      "width": 1210,
+      "height": 199
+    },
+    {
+      "src": "assets/english/pronunciation/002-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 2,
+      "page": 1,
+      "box": [
+        225,
+        527,
+        1435,
+        725
+      ],
+      "width": 1210,
+      "height": 198
+    },
+    {
+      "src": "assets/english/pronunciation/003-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 3,
+      "page": 1,
+      "box": [
+        225,
+        794,
+        1435,
+        1030
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/004-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 4,
+      "page": 1,
+      "box": [
+        225,
+        1098,
+        1435,
+        1334
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/005-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 5,
+      "page": 1,
+      "box": [
+        225,
+        1402,
+        1435,
+        1638
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/006-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 6,
+      "page": 1,
+      "box": [
+        225,
+        1707,
+        1435,
+        1913
+      ],
+      "width": 1210,
+      "height": 206
+    },
+    {
+      "src": "assets/english/pronunciation/006-2.webp",
+      "section": "pronunciation",
+      "sourceGroup": 6,
+      "page": 2,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/pronunciation/007-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 7,
+      "page": 2,
+      "box": [
+        225,
+        301,
+        1435,
+        537
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/008-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 8,
+      "page": 2,
+      "box": [
+        225,
+        605,
+        1435,
+        841
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/009-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 9,
+      "page": 2,
+      "box": [
+        225,
+        909,
+        1435,
+        1145
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/010-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 10,
+      "page": 2,
+      "box": [
+        225,
+        1214,
+        1435,
+        1450
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/011-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 11,
+      "page": 2,
+      "box": [
+        225,
+        1518,
+        1435,
+        1754
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/012-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 12,
+      "page": 2,
+      "box": [
+        225,
+        1822,
+        1435,
+        1879
+      ],
+      "width": 1210,
+      "height": 57
+    },
+    {
+      "src": "assets/english/pronunciation/012-2.webp",
+      "section": "pronunciation",
+      "sourceGroup": 12,
+      "page": 3,
+      "box": [
+        225,
+        187,
+        1435,
+        343
+      ],
+      "width": 1210,
+      "height": 156
+    },
+    {
+      "src": "assets/english/pronunciation/013-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 13,
+      "page": 3,
+      "box": [
+        225,
+        411,
+        1435,
+        647
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/014-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 14,
+      "page": 3,
+      "box": [
+        225,
+        715,
+        1435,
+        951
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/015-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 15,
+      "page": 3,
+      "box": [
+        225,
+        1020,
+        1435,
+        1256
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/016-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 16,
+      "page": 3,
+      "box": [
+        225,
+        1324,
+        1435,
+        1560
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/017-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 17,
+      "page": 3,
+      "box": [
+        225,
+        1628,
+        1435,
+        1864
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/018-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 18,
+      "page": 4,
+      "box": [
+        225,
+        222,
+        1435,
+        458
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/019-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 19,
+      "page": 4,
+      "box": [
+        225,
+        527,
+        1435,
+        763
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/020-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 20,
+      "page": 4,
+      "box": [
+        225,
+        831,
+        1435,
+        1067
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/021-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 21,
+      "page": 4,
+      "box": [
+        225,
+        1135,
+        1435,
+        1371
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/022-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 22,
+      "page": 4,
+      "box": [
+        225,
+        1440,
+        1435,
+        1676
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/023-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 23,
+      "page": 4,
+      "box": [
+        225,
+        1744,
+        1435,
+        1913
+      ],
+      "width": 1210,
+      "height": 169
+    },
+    {
+      "src": "assets/english/pronunciation/023-2.webp",
+      "section": "pronunciation",
+      "sourceGroup": 23,
+      "page": 5,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/pronunciation/024-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 24,
+      "page": 5,
+      "box": [
+        225,
+        337,
+        1435,
+        573
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/025-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 25,
+      "page": 5,
+      "box": [
+        225,
+        642,
+        1435,
+        878
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/026-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 26,
+      "page": 5,
+      "box": [
+        225,
+        946,
+        1435,
+        1182
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/027-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 27,
+      "page": 5,
+      "box": [
+        225,
+        1250,
+        1435,
+        1486
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/028-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 28,
+      "page": 5,
+      "box": [
+        225,
+        1555,
+        1435,
+        1791
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/029-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 29,
+      "page": 5,
+      "box": [
+        225,
+        1859,
+        1435,
+        1916
+      ],
+      "width": 1210,
+      "height": 57
+    },
+    {
+      "src": "assets/english/pronunciation/029-2.webp",
+      "section": "pronunciation",
+      "sourceGroup": 29,
+      "page": 6,
+      "box": [
+        225,
+        187,
+        1435,
+        343
+      ],
+      "width": 1210,
+      "height": 156
+    },
+    {
+      "src": "assets/english/pronunciation/030-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 30,
+      "page": 6,
+      "box": [
+        225,
+        411,
+        1435,
+        647
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/031-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 31,
+      "page": 6,
+      "box": [
+        225,
+        715,
+        1435,
+        951
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/032-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 32,
+      "page": 6,
+      "box": [
+        225,
+        1020,
+        1435,
+        1256
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/033-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 33,
+      "page": 6,
+      "box": [
+        225,
+        1324,
+        1435,
+        1560
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/034-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 34,
+      "page": 6,
+      "box": [
+        225,
+        1628,
+        1435,
+        1864
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/035-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 35,
+      "page": 7,
+      "box": [
+        225,
+        185,
+        1435,
+        422
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/pronunciation/036-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 36,
+      "page": 7,
+      "box": [
+        225,
+        490,
+        1435,
+        726
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/037-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 37,
+      "page": 7,
+      "box": [
+        225,
+        794,
+        1435,
+        1030
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/038-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 38,
+      "page": 7,
+      "box": [
+        225,
+        1098,
+        1435,
+        1334
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/039-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 39,
+      "page": 7,
+      "box": [
+        225,
+        1403,
+        1435,
+        1639
+      ],
+      "width": 1210,
+      "height": 236
+    },
+    {
+      "src": "assets/english/pronunciation/040-1.webp",
+      "section": "pronunciation",
+      "sourceGroup": 40,
+      "page": 7,
+      "box": [
+        225,
+        1707,
+        1435,
+        1915
+      ],
+      "width": 1210,
+      "height": 208
+    },
+    {
+      "src": "assets/english/pronunciation/040-2.webp",
+      "section": "pronunciation",
+      "sourceGroup": 40,
+      "page": 8,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/dialogue/001-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        188,
+        1435,
+        425
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/002-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 2,
+      "page": 1,
+      "box": [
+        225,
+        727,
+        1435,
+        964
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/003-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 3,
+      "page": 1,
+      "box": [
+        225,
+        1266,
+        1435,
+        1503
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/004-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 4,
+      "page": 2,
+      "box": [
+        225,
+        188,
+        1435,
+        461
+      ],
+      "width": 1210,
+      "height": 273
+    },
+    {
+      "src": "assets/english/dialogue/005-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 5,
+      "page": 2,
+      "box": [
+        225,
+        764,
+        1435,
+        1001
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/006-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 6,
+      "page": 2,
+      "box": [
+        225,
+        1304,
+        1435,
+        1541
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/007-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 7,
+      "page": 3,
+      "box": [
+        225,
+        188,
+        1435,
+        425
+      ],
+      "width": 1210,
+      "height": 237
+    },
+    {
+      "src": "assets/english/dialogue/008-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 8,
+      "page": 3,
+      "box": [
+        225,
+        653,
+        1435,
+        927
+      ],
+      "width": 1210,
+      "height": 274
+    },
+    {
+      "src": "assets/english/dialogue/009-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 9,
+      "page": 3,
+      "box": [
+        225,
+        1155,
+        1435,
+        1658
+      ],
+      "width": 1210,
+      "height": 503
+    },
+    {
+      "src": "assets/english/dialogue/010-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 10,
+      "page": 4,
+      "box": [
+        225,
+        188,
+        1435,
+        652
+      ],
+      "width": 1210,
+      "height": 464
+    },
+    {
+      "src": "assets/english/dialogue/011-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 11,
+      "page": 4,
+      "box": [
+        225,
+        994,
+        1435,
+        1534
+      ],
+      "width": 1210,
+      "height": 540
+    },
+    {
+      "src": "assets/english/dialogue/012-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 12,
+      "page": 4,
+      "box": [
+        225,
+        1873,
+        1435,
+        1920
+      ],
+      "width": 1210,
+      "height": 47
+    },
+    {
+      "src": "assets/english/dialogue/012-2.webp",
+      "section": "dialogue",
+      "sourceGroup": 12,
+      "page": 5,
+      "box": [
+        225,
+        180,
+        1435,
+        654
+      ],
+      "width": 1210,
+      "height": 474
+    },
+    {
+      "src": "assets/english/dialogue/013-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 13,
+      "page": 5,
+      "box": [
+        225,
+        919,
+        1435,
+        1385
+      ],
+      "width": 1210,
+      "height": 466
+    },
+    {
+      "src": "assets/english/dialogue/014-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 14,
+      "page": 5,
+      "box": [
+        225,
+        1651,
+        1435,
+        1896
+      ],
+      "width": 1210,
+      "height": 245
+    },
+    {
+      "src": "assets/english/dialogue/014-2.webp",
+      "section": "dialogue",
+      "sourceGroup": 14,
+      "page": 6,
+      "box": [
+        225,
+        180,
+        1435,
+        506
+      ],
+      "width": 1210,
+      "height": 326
+    },
+    {
+      "src": "assets/english/dialogue/015-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 15,
+      "page": 6,
+      "box": [
+        225,
+        809,
+        1435,
+        1126
+      ],
+      "width": 1210,
+      "height": 317
+    },
+    {
+      "src": "assets/english/dialogue/016-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 16,
+      "page": 6,
+      "box": [
+        225,
+        1467,
+        1435,
+        1858
+      ],
+      "width": 1210,
+      "height": 391
+    },
+    {
+      "src": "assets/english/dialogue/017-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 17,
+      "page": 7,
+      "box": [
+        225,
+        432,
+        1435,
+        929
+      ],
+      "width": 1210,
+      "height": 497
+    },
+    {
+      "src": "assets/english/dialogue/018-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 18,
+      "page": 7,
+      "box": [
+        225,
+        1201,
+        1435,
+        1557
+      ],
+      "width": 1210,
+      "height": 356
+    },
+    {
+      "src": "assets/english/dialogue/019-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 19,
+      "page": 8,
+      "box": [
+        225,
+        188,
+        1435,
+        654
+      ],
+      "width": 1210,
+      "height": 466
+    },
+    {
+      "src": "assets/english/dialogue/020-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 20,
+      "page": 8,
+      "box": [
+        225,
+        956,
+        1435,
+        1312
+      ],
+      "width": 1210,
+      "height": 356
+    },
+    {
+      "src": "assets/english/dialogue/021-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 21,
+      "page": 8,
+      "box": [
+        225,
+        1577,
+        1435,
+        1859
+      ],
+      "width": 1210,
+      "height": 282
+    },
+    {
+      "src": "assets/english/dialogue/021-2.webp",
+      "section": "dialogue",
+      "sourceGroup": 21,
+      "page": 9,
+      "box": [
+        225,
+        187,
+        1435,
+        351
+      ],
+      "width": 1210,
+      "height": 164
+    },
+    {
+      "src": "assets/english/dialogue/022-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 22,
+      "page": 9,
+      "box": [
+        225,
+        691,
+        1435,
+        1083
+      ],
+      "width": 1210,
+      "height": 392
+    },
+    {
+      "src": "assets/english/dialogue/023-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 23,
+      "page": 9,
+      "box": [
+        225,
+        1348,
+        1435,
+        1778
+      ],
+      "width": 1210,
+      "height": 430
+    },
+    {
+      "src": "assets/english/dialogue/024-1.webp",
+      "section": "dialogue",
+      "sourceGroup": 24,
+      "page": 10,
+      "box": [
+        225,
+        349,
+        1435,
+        779
+      ],
+      "width": 1210,
+      "height": 430
+    },
+    {
+      "src": "assets/english/vocabulary/001-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        187,
+        1435,
+        416
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/002-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 2,
+      "page": 1,
+      "box": [
+        225,
+        560,
+        1435,
+        789
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/003-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 3,
+      "page": 1,
+      "box": [
+        225,
+        933,
+        1435,
+        1126
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/004-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 4,
+      "page": 1,
+      "box": [
+        225,
+        1270,
+        1435,
+        1462
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/005-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 5,
+      "page": 1,
+      "box": [
+        225,
+        1606,
+        1435,
+        1836
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/006-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 6,
+      "page": 2,
+      "box": [
+        225,
+        298,
+        1435,
+        527
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/007-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 7,
+      "page": 2,
+      "box": [
+        225,
+        671,
+        1435,
+        900
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/008-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 8,
+      "page": 2,
+      "box": [
+        225,
+        1044,
+        1435,
+        1274
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/009-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 9,
+      "page": 2,
+      "box": [
+        225,
+        1417,
+        1435,
+        1610
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/010-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 10,
+      "page": 2,
+      "box": [
+        225,
+        1754,
+        1435,
+        1912
+      ],
+      "width": 1210,
+      "height": 158
+    },
+    {
+      "src": "assets/english/vocabulary/010-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 10,
+      "page": 3,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/vocabulary/011-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 11,
+      "page": 3,
+      "box": [
+        225,
+        376,
+        1435,
+        569
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/012-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 12,
+      "page": 3,
+      "box": [
+        225,
+        713,
+        1435,
+        905
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/013-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 13,
+      "page": 3,
+      "box": [
+        225,
+        1049,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/014-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 14,
+      "page": 3,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/015-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 15,
+      "page": 3,
+      "box": [
+        225,
+        1759,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 164
+    },
+    {
+      "src": "assets/english/vocabulary/015-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 15,
+      "page": 4,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/vocabulary/016-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 16,
+      "page": 4,
+      "box": [
+        225,
+        376,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/017-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 17,
+      "page": 4,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/018-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 18,
+      "page": 4,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/019-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 19,
+      "page": 4,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/020-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 20,
+      "page": 4,
+      "box": [
+        225,
+        1759,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 164
+    },
+    {
+      "src": "assets/english/vocabulary/020-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 20,
+      "page": 5,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/021-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 21,
+      "page": 5,
+      "box": [
+        225,
+        413,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/022-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 22,
+      "page": 5,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/023-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 23,
+      "page": 5,
+      "box": [
+        225,
+        1086,
+        1435,
+        1315
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/024-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 24,
+      "page": 5,
+      "box": [
+        225,
+        1459,
+        1435,
+        1652
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/025-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 25,
+      "page": 5,
+      "box": [
+        225,
+        1795,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 128
+    },
+    {
+      "src": "assets/english/vocabulary/025-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 25,
+      "page": 6,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/026-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 26,
+      "page": 6,
+      "box": [
+        225,
+        413,
+        1435,
+        642
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/027-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 27,
+      "page": 6,
+      "box": [
+        225,
+        786,
+        1435,
+        979
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/028-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 28,
+      "page": 6,
+      "box": [
+        225,
+        1123,
+        1435,
+        1389
+      ],
+      "width": 1210,
+      "height": 266
+    },
+    {
+      "src": "assets/english/vocabulary/029-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 29,
+      "page": 6,
+      "box": [
+        225,
+        1533,
+        1435,
+        1762
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/030-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 30,
+      "page": 7,
+      "box": [
+        225,
+        187,
+        1435,
+        416
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/031-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 31,
+      "page": 7,
+      "box": [
+        225,
+        560,
+        1435,
+        789
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/032-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 32,
+      "page": 7,
+      "box": [
+        225,
+        933,
+        1435,
+        1126
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/033-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 33,
+      "page": 7,
+      "box": [
+        225,
+        1270,
+        1435,
+        1462
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/034-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 34,
+      "page": 7,
+      "box": [
+        225,
+        1606,
+        1435,
+        1836
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/035-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 35,
+      "page": 8,
+      "box": [
+        225,
+        298,
+        1435,
+        490
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/036-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 36,
+      "page": 8,
+      "box": [
+        225,
+        634,
+        1435,
+        827
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/037-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 37,
+      "page": 8,
+      "box": [
+        225,
+        971,
+        1435,
+        1163
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/038-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 38,
+      "page": 8,
+      "box": [
+        225,
+        1307,
+        1435,
+        1536
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/039-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 39,
+      "page": 8,
+      "box": [
+        225,
+        1680,
+        1435,
+        1918
+      ],
+      "width": 1210,
+      "height": 238
+    },
+    {
+      "src": "assets/english/vocabulary/040-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 40,
+      "page": 9,
+      "box": [
+        225,
+        339,
+        1435,
+        532
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/041-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 41,
+      "page": 9,
+      "box": [
+        225,
+        676,
+        1435,
+        905
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/042-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 42,
+      "page": 9,
+      "box": [
+        225,
+        1049,
+        1435,
+        1242
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/043-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 43,
+      "page": 9,
+      "box": [
+        225,
+        1385,
+        1435,
+        1578
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/044-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 44,
+      "page": 9,
+      "box": [
+        225,
+        1722,
+        1435,
+        1922
+      ],
+      "width": 1210,
+      "height": 200
+    },
+    {
+      "src": "assets/english/vocabulary/045-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 45,
+      "page": 10,
+      "box": [
+        225,
+        339,
+        1435,
+        532
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/046-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 46,
+      "page": 10,
+      "box": [
+        225,
+        676,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 266
+    },
+    {
+      "src": "assets/english/vocabulary/047-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 47,
+      "page": 10,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/048-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 48,
+      "page": 10,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/049-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 49,
+      "page": 10,
+      "box": [
+        225,
+        1759,
+        1435,
+        1917
+      ],
+      "width": 1210,
+      "height": 158
+    },
+    {
+      "src": "assets/english/vocabulary/049-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 49,
+      "page": 11,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/vocabulary/050-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 50,
+      "page": 11,
+      "box": [
+        225,
+        376,
+        1435,
+        569
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/051-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 51,
+      "page": 11,
+      "box": [
+        225,
+        713,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/052-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 52,
+      "page": 11,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/053-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 53,
+      "page": 11,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/054-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 54,
+      "page": 11,
+      "box": [
+        225,
+        1759,
+        1435,
+        1917
+      ],
+      "width": 1210,
+      "height": 158
+    },
+    {
+      "src": "assets/english/vocabulary/054-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 54,
+      "page": 12,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/055-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 55,
+      "page": 12,
+      "box": [
+        225,
+        413,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/056-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 56,
+      "page": 12,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/057-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 57,
+      "page": 12,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/058-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 58,
+      "page": 12,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/059-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 59,
+      "page": 12,
+      "box": [
+        225,
+        1759,
+        1435,
+        1922
+      ],
+      "width": 1210,
+      "height": 163
+    },
+    {
+      "src": "assets/english/vocabulary/059-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 59,
+      "page": 13,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/060-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 60,
+      "page": 13,
+      "box": [
+        225,
+        413,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/061-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 61,
+      "page": 13,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/062-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 62,
+      "page": 13,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/063-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 63,
+      "page": 13,
+      "box": [
+        225,
+        1422,
+        1435,
+        1652
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/064-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 64,
+      "page": 13,
+      "box": [
+        225,
+        1795,
+        1435,
+        1917
+      ],
+      "width": 1210,
+      "height": 122
+    },
+    {
+      "src": "assets/english/vocabulary/064-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 64,
+      "page": 14,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/065-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 65,
+      "page": 14,
+      "box": [
+        225,
+        413,
+        1435,
+        642
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/066-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 66,
+      "page": 14,
+      "box": [
+        225,
+        786,
+        1435,
+        1016
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/067-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 67,
+      "page": 14,
+      "box": [
+        225,
+        1159,
+        1435,
+        1389
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/068-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 68,
+      "page": 14,
+      "box": [
+        225,
+        1533,
+        1435,
+        1725
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/069-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 69,
+      "page": 14,
+      "box": [
+        225,
+        1869,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 54
+    },
+    {
+      "src": "assets/english/vocabulary/069-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 69,
+      "page": 15,
+      "box": [
+        225,
+        187,
+        1435,
+        343
+      ],
+      "width": 1210,
+      "height": 156
+    },
+    {
+      "src": "assets/english/vocabulary/070-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 70,
+      "page": 15,
+      "box": [
+        225,
+        486,
+        1435,
+        716
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/071-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 71,
+      "page": 15,
+      "box": [
+        225,
+        860,
+        1435,
+        1089
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/072-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 72,
+      "page": 15,
+      "box": [
+        225,
+        1233,
+        1435,
+        1462
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/073-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 73,
+      "page": 15,
+      "box": [
+        225,
+        1606,
+        1435,
+        1799
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/074-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 74,
+      "page": 16,
+      "box": [
+        225,
+        187,
+        1435,
+        379
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/075-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 75,
+      "page": 16,
+      "box": [
+        225,
+        523,
+        1435,
+        753
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/076-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 76,
+      "page": 16,
+      "box": [
+        225,
+        896,
+        1435,
+        1126
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/077-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 77,
+      "page": 16,
+      "box": [
+        225,
+        1270,
+        1435,
+        1499
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/078-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 78,
+      "page": 16,
+      "box": [
+        225,
+        1643,
+        1435,
+        1872
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/079-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 79,
+      "page": 17,
+      "box": [
+        225,
+        298,
+        1435,
+        490
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/080-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 80,
+      "page": 17,
+      "box": [
+        225,
+        634,
+        1435,
+        864
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/081-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 81,
+      "page": 17,
+      "box": [
+        225,
+        1007,
+        1435,
+        1237
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/082-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 82,
+      "page": 17,
+      "box": [
+        225,
+        1381,
+        1435,
+        1573
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/083-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 83,
+      "page": 17,
+      "box": [
+        225,
+        1717,
+        1435,
+        1918
+      ],
+      "width": 1210,
+      "height": 201
+    },
+    {
+      "src": "assets/english/vocabulary/083-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 83,
+      "page": 18,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/vocabulary/084-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 84,
+      "page": 18,
+      "box": [
+        225,
+        376,
+        1435,
+        569
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/085-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 85,
+      "page": 18,
+      "box": [
+        225,
+        713,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/086-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 86,
+      "page": 18,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/087-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 87,
+      "page": 18,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/088-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 88,
+      "page": 18,
+      "box": [
+        225,
+        1759,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 164
+    },
+    {
+      "src": "assets/english/vocabulary/088-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 88,
+      "page": 19,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/vocabulary/089-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 89,
+      "page": 19,
+      "box": [
+        225,
+        376,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/090-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 90,
+      "page": 19,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/091-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 91,
+      "page": 19,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/092-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 92,
+      "page": 19,
+      "box": [
+        225,
+        1422,
+        1435,
+        1652
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/093-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 93,
+      "page": 19,
+      "box": [
+        225,
+        1795,
+        1435,
+        1917
+      ],
+      "width": 1210,
+      "height": 122
+    },
+    {
+      "src": "assets/english/vocabulary/093-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 93,
+      "page": 20,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/094-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 94,
+      "page": 20,
+      "box": [
+        225,
+        413,
+        1435,
+        606
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/095-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 95,
+      "page": 20,
+      "box": [
+        225,
+        749,
+        1435,
+        942
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/096-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 96,
+      "page": 20,
+      "box": [
+        225,
+        1086,
+        1435,
+        1278
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/097-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 97,
+      "page": 20,
+      "box": [
+        225,
+        1422,
+        1435,
+        1615
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/098-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 98,
+      "page": 20,
+      "box": [
+        225,
+        1759,
+        1435,
+        1917
+      ],
+      "width": 1210,
+      "height": 158
+    },
+    {
+      "src": "assets/english/vocabulary/098-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 98,
+      "page": 21,
+      "box": [
+        225,
+        187,
+        1435,
+        269
+      ],
+      "width": 1210,
+      "height": 82
+    },
+    {
+      "src": "assets/english/vocabulary/099-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 99,
+      "page": 21,
+      "box": [
+        225,
+        413,
+        1435,
+        642
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/100-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 100,
+      "page": 21,
+      "box": [
+        225,
+        786,
+        1435,
+        1016
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/101-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 101,
+      "page": 21,
+      "box": [
+        225,
+        1159,
+        1435,
+        1352
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/102-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 102,
+      "page": 21,
+      "box": [
+        225,
+        1496,
+        1435,
+        1688
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/103-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 103,
+      "page": 21,
+      "box": [
+        225,
+        1832,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 91
+    },
+    {
+      "src": "assets/english/vocabulary/103-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 103,
+      "page": 22,
+      "box": [
+        225,
+        187,
+        1435,
+        306
+      ],
+      "width": 1210,
+      "height": 119
+    },
+    {
+      "src": "assets/english/vocabulary/104-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 104,
+      "page": 22,
+      "box": [
+        225,
+        450,
+        1435,
+        642
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/105-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 105,
+      "page": 22,
+      "box": [
+        225,
+        786,
+        1435,
+        979
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/106-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 106,
+      "page": 22,
+      "box": [
+        225,
+        1123,
+        1435,
+        1315
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/107-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 107,
+      "page": 22,
+      "box": [
+        225,
+        1459,
+        1435,
+        1652
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/108-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 108,
+      "page": 22,
+      "box": [
+        225,
+        1795,
+        1435,
+        1923
+      ],
+      "width": 1210,
+      "height": 128
+    },
+    {
+      "src": "assets/english/vocabulary/108-2.webp",
+      "section": "vocabulary",
+      "sourceGroup": 108,
+      "page": 23,
+      "box": [
+        225,
+        187,
+        1435,
+        306
+      ],
+      "width": 1210,
+      "height": 119
+    },
+    {
+      "src": "assets/english/vocabulary/109-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 109,
+      "page": 23,
+      "box": [
+        225,
+        450,
+        1435,
+        679
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/110-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 110,
+      "page": 23,
+      "box": [
+        225,
+        823,
+        1435,
+        1016
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/111-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 111,
+      "page": 23,
+      "box": [
+        225,
+        1162,
+        1435,
+        1393
+      ],
+      "width": 1210,
+      "height": 231
+    },
+    {
+      "src": "assets/english/vocabulary/112-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 112,
+      "page": 23,
+      "box": [
+        225,
+        1537,
+        1435,
+        1730
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/vocabulary/113-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 113,
+      "page": 24,
+      "box": [
+        225,
+        187,
+        1435,
+        416
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/114-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 114,
+      "page": 24,
+      "box": [
+        225,
+        560,
+        1435,
+        789
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/115-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 115,
+      "page": 24,
+      "box": [
+        225,
+        933,
+        1435,
+        1163
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/116-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 116,
+      "page": 24,
+      "box": [
+        225,
+        1307,
+        1435,
+        1536
+      ],
+      "width": 1210,
+      "height": 229
+    },
+    {
+      "src": "assets/english/vocabulary/117-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 117,
+      "page": 24,
+      "box": [
+        225,
+        1680,
+        1435,
+        1872
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/118-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 118,
+      "page": 25,
+      "box": [
+        225,
+        298,
+        1435,
+        490
+      ],
+      "width": 1210,
+      "height": 192
+    },
+    {
+      "src": "assets/english/vocabulary/119-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 119,
+      "page": 25,
+      "box": [
+        225,
+        634,
+        1435,
+        864
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/vocabulary/120-1.webp",
+      "section": "vocabulary",
+      "sourceGroup": 120,
+      "page": 25,
+      "box": [
+        225,
+        1007,
+        1435,
+        1237
+      ],
+      "width": 1210,
+      "height": 230
+    },
+    {
+      "src": "assets/english/pictures/001-1.webp",
+      "section": "pictures",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        183,
+        1435,
+        862
+      ],
+      "width": 1210,
+      "height": 679
+    },
+    {
+      "src": "assets/english/pictures/002-1.webp",
+      "section": "pictures",
+      "sourceGroup": 2,
+      "page": 1,
+      "box": [
+        225,
+        1020,
+        1435,
+        1529
+      ],
+      "width": 1210,
+      "height": 509
+    },
+    {
+      "src": "assets/english/pictures/003-1.webp",
+      "section": "pictures",
+      "sourceGroup": 3,
+      "page": 2,
+      "box": [
+        225,
+        183,
+        1435,
+        992
+      ],
+      "width": 1210,
+      "height": 809
+    },
+    {
+      "src": "assets/english/pictures/004-1.webp",
+      "section": "pictures",
+      "sourceGroup": 4,
+      "page": 2,
+      "box": [
+        225,
+        1133,
+        1435,
+        1872
+      ],
+      "width": 1210,
+      "height": 739
+    },
+    {
+      "src": "assets/english/pictures/005-1.webp",
+      "section": "pictures",
+      "sourceGroup": 5,
+      "page": 3,
+      "box": [
+        225,
+        296,
+        1435,
+        1385
+      ],
+      "width": 1210,
+      "height": 1089
+    },
+    {
+      "src": "assets/english/pictures/006-1.webp",
+      "section": "pictures",
+      "sourceGroup": 6,
+      "page": 4,
+      "box": [
+        225,
+        183,
+        1435,
+        1109
+      ],
+      "width": 1210,
+      "height": 926
+    },
+    {
+      "src": "assets/english/pictures/007-1.webp",
+      "section": "pictures",
+      "sourceGroup": 7,
+      "page": 5,
+      "box": [
+        225,
+        184,
+        1435,
+        1032
+      ],
+      "width": 1210,
+      "height": 848
+    },
+    {
+      "src": "assets/english/pictures/008-1.webp",
+      "section": "pictures",
+      "sourceGroup": 8,
+      "page": 5,
+      "box": [
+        225,
+        1172,
+        1435,
+        1800
+      ],
+      "width": 1210,
+      "height": 628
+    },
+    {
+      "src": "assets/english/pictures/009-1.webp",
+      "section": "pictures",
+      "sourceGroup": 9,
+      "page": 6,
+      "box": [
+        225,
+        183,
+        1435,
+        1086
+      ],
+      "width": 1210,
+      "height": 903
+    },
+    {
+      "src": "assets/english/pictures/010-1.webp",
+      "section": "pictures",
+      "sourceGroup": 10,
+      "page": 6,
+      "box": [
+        225,
+        1245,
+        1435,
+        1910
+      ],
+      "width": 1210,
+      "height": 665
+    },
+    {
+      "src": "assets/english/pictures/010-2.webp",
+      "section": "pictures",
+      "sourceGroup": 10,
+      "page": 7,
+      "box": [
+        225,
+        188,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 44
+    },
+    {
+      "src": "assets/english/pictures/011-1.webp",
+      "section": "pictures",
+      "sourceGroup": 11,
+      "page": 7,
+      "box": [
+        225,
+        373,
+        1435,
+        1285
+      ],
+      "width": 1210,
+      "height": 912
+    },
+    {
+      "src": "assets/english/pictures/012-1.webp",
+      "section": "pictures",
+      "sourceGroup": 12,
+      "page": 8,
+      "box": [
+        225,
+        179,
+        1435,
+        1160
+      ],
+      "width": 1210,
+      "height": 981
+    },
+    {
+      "src": "assets/english/pictures/013-1.webp",
+      "section": "pictures",
+      "sourceGroup": 13,
+      "page": 8,
+      "box": [
+        225,
+        1305,
+        1435,
+        1905
+      ],
+      "width": 1210,
+      "height": 600
+    },
+    {
+      "src": "assets/english/pictures/013-2.webp",
+      "section": "pictures",
+      "sourceGroup": 13,
+      "page": 9,
+      "box": [
+        225,
+        188,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 44
+    },
+    {
+      "src": "assets/english/pictures/014-1.webp",
+      "section": "pictures",
+      "sourceGroup": 14,
+      "page": 9,
+      "box": [
+        225,
+        408,
+        1435,
+        1225
+      ],
+      "width": 1210,
+      "height": 817
+    },
+    {
+      "src": "assets/english/pictures/015-1.webp",
+      "section": "pictures",
+      "sourceGroup": 15,
+      "page": 10,
+      "box": [
+        225,
+        196,
+        1435,
+        1010
+      ],
+      "width": 1210,
+      "height": 814
+    },
+    {
+      "src": "assets/english/pictures/016-1.webp",
+      "section": "pictures",
+      "sourceGroup": 16,
+      "page": 10,
+      "box": [
+        225,
+        1164,
+        1435,
+        1920
+      ],
+      "width": 1210,
+      "height": 756
+    },
+    {
+      "src": "assets/english/pictures/017-1.webp",
+      "section": "pictures",
+      "sourceGroup": 17,
+      "page": 11,
+      "box": [
+        225,
+        340,
+        1435,
+        688
+      ],
+      "width": 1210,
+      "height": 348
+    },
+    {
+      "src": "assets/english/pictures/018-1.webp",
+      "section": "pictures",
+      "sourceGroup": 18,
+      "page": 11,
+      "box": [
+        225,
+        832,
+        1435,
+        1180
+      ],
+      "width": 1210,
+      "height": 348
+    },
+    {
+      "src": "assets/english/pictures/019-1.webp",
+      "section": "pictures",
+      "sourceGroup": 19,
+      "page": 11,
+      "box": [
+        225,
+        1325,
+        1435,
+        1672
+      ],
+      "width": 1210,
+      "height": 347
+    },
+    {
+      "src": "assets/english/pictures/020-1.webp",
+      "section": "pictures",
+      "sourceGroup": 20,
+      "page": 11,
+      "box": [
+        225,
+        1817,
+        1435,
+        1914
+      ],
+      "width": 1210,
+      "height": 97
+    },
+    {
+      "src": "assets/english/pictures/020-2.webp",
+      "section": "pictures",
+      "sourceGroup": 20,
+      "page": 12,
+      "box": [
+        225,
+        180,
+        1435,
+        498
+      ],
+      "width": 1210,
+      "height": 318
+    },
+    {
+      "src": "assets/english/pictures/021-1.webp",
+      "section": "pictures",
+      "sourceGroup": 21,
+      "page": 12,
+      "box": [
+        225,
+        643,
+        1435,
+        991
+      ],
+      "width": 1210,
+      "height": 348
+    },
+    {
+      "src": "assets/english/pictures/022-1.webp",
+      "section": "pictures",
+      "sourceGroup": 22,
+      "page": 12,
+      "box": [
+        225,
+        1129,
+        1435,
+        1487
+      ],
+      "width": 1210,
+      "height": 358
+    },
+    {
+      "src": "assets/english/pictures/023-1.webp",
+      "section": "pictures",
+      "sourceGroup": 23,
+      "page": 12,
+      "box": [
+        225,
+        1632,
+        1435,
+        1877
+      ],
+      "width": 1210,
+      "height": 245
+    },
+    {
+      "src": "assets/english/pictures/023-2.webp",
+      "section": "pictures",
+      "sourceGroup": 23,
+      "page": 13,
+      "box": [
+        225,
+        187,
+        1435,
+        306
+      ],
+      "width": 1210,
+      "height": 119
+    },
+    {
+      "src": "assets/english/pictures/024-1.webp",
+      "section": "pictures",
+      "sourceGroup": 24,
+      "page": 13,
+      "box": [
+        225,
+        451,
+        1435,
+        835
+      ],
+      "width": 1210,
+      "height": 384
+    },
+    {
+      "src": "assets/english/pictures/025-1.webp",
+      "section": "pictures",
+      "sourceGroup": 25,
+      "page": 13,
+      "box": [
+        225,
+        978,
+        1435,
+        1566
+      ],
+      "width": 1210,
+      "height": 588
+    },
+    {
+      "src": "assets/english/pictures/026-1.webp",
+      "section": "pictures",
+      "sourceGroup": 26,
+      "page": 13,
+      "box": [
+        225,
+        1711,
+        1435,
+        1882
+      ],
+      "width": 1210,
+      "height": 171
+    },
+    {
+      "src": "assets/english/pictures/026-2.webp",
+      "section": "pictures",
+      "sourceGroup": 26,
+      "page": 14,
+      "box": [
+        225,
+        224,
+        1435,
+        417
+      ],
+      "width": 1210,
+      "height": 193
+    },
+    {
+      "src": "assets/english/pictures/027-1.webp",
+      "section": "pictures",
+      "sourceGroup": 27,
+      "page": 14,
+      "box": [
+        225,
+        582,
+        1435,
+        1311
+      ],
+      "width": 1210,
+      "height": 729
+    },
+    {
+      "src": "assets/english/pictures/028-1.webp",
+      "section": "pictures",
+      "sourceGroup": 28,
+      "page": 14,
+      "box": [
+        225,
+        1456,
+        1435,
+        1803
+      ],
+      "width": 1210,
+      "height": 347
+    },
+    {
+      "src": "assets/english/pictures/029-1.webp",
+      "section": "pictures",
+      "sourceGroup": 29,
+      "page": 15,
+      "box": [
+        225,
+        188,
+        1435,
+        609
+      ],
+      "width": 1210,
+      "height": 421
+    },
+    {
+      "src": "assets/english/pictures/030-1.webp",
+      "section": "pictures",
+      "sourceGroup": 30,
+      "page": 15,
+      "box": [
+        225,
+        754,
+        1435,
+        1138
+      ],
+      "width": 1210,
+      "height": 384
+    },
+    {
+      "src": "assets/english/pictures/031-1.webp",
+      "section": "pictures",
+      "sourceGroup": 31,
+      "page": 15,
+      "box": [
+        225,
+        1283,
+        1435,
+        1667
+      ],
+      "width": 1210,
+      "height": 384
+    },
+    {
+      "src": "assets/english/pictures/032-1.webp",
+      "section": "pictures",
+      "sourceGroup": 32,
+      "page": 15,
+      "box": [
+        225,
+        1811,
+        1435,
+        1909
+      ],
+      "width": 1210,
+      "height": 98
+    },
+    {
+      "src": "assets/english/pictures/032-2.webp",
+      "section": "pictures",
+      "sourceGroup": 32,
+      "page": 16,
+      "box": [
+        225,
+        180,
+        1435,
+        498
+      ],
+      "width": 1210,
+      "height": 318
+    },
+    {
+      "src": "assets/english/cloze/001-1.webp",
+      "section": "cloze",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        188,
+        1435,
+        1888
+      ],
+      "width": 1210,
+      "height": 1700
+    },
+    {
+      "src": "assets/english/cloze/001-2.webp",
+      "section": "cloze",
+      "sourceGroup": 1,
+      "page": 2,
+      "box": [
+        225,
+        224,
+        1435,
+        720
+      ],
+      "width": 1210,
+      "height": 496
+    },
+    {
+      "src": "assets/english/cloze/002-1.webp",
+      "section": "cloze",
+      "sourceGroup": 2,
+      "page": 2,
+      "box": [
+        225,
+        866,
+        1435,
+        1893
+      ],
+      "width": 1210,
+      "height": 1027
+    },
+    {
+      "src": "assets/english/cloze/002-2.webp",
+      "section": "cloze",
+      "sourceGroup": 2,
+      "page": 3,
+      "box": [
+        225,
+        266,
+        1435,
+        1328
+      ],
+      "width": 1210,
+      "height": 1062
+    },
+    {
+      "src": "assets/english/cloze/003-1.webp",
+      "section": "cloze",
+      "sourceGroup": 3,
+      "page": 3,
+      "box": [
+        225,
+        1471,
+        1435,
+        1930
+      ],
+      "width": 1210,
+      "height": 459
+    },
+    {
+      "src": "assets/english/cloze/003-2.webp",
+      "section": "cloze",
+      "sourceGroup": 3,
+      "page": 4,
+      "box": [
+        225,
+        188,
+        1435,
+        1896
+      ],
+      "width": 1210,
+      "height": 1708
+    },
+    {
+      "src": "assets/english/cloze/003-3.webp",
+      "section": "cloze",
+      "sourceGroup": 3,
+      "page": 5,
+      "box": [
+        225,
+        188,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 44
+    },
+    {
+      "src": "assets/english/cloze/004-1.webp",
+      "section": "cloze",
+      "sourceGroup": 4,
+      "page": 5,
+      "box": [
+        225,
+        377,
+        1435,
+        1889
+      ],
+      "width": 1210,
+      "height": 1512
+    },
+    {
+      "src": "assets/english/cloze/004-2.webp",
+      "section": "cloze",
+      "sourceGroup": 4,
+      "page": 6,
+      "box": [
+        225,
+        224,
+        1435,
+        909
+      ],
+      "width": 1210,
+      "height": 685
+    },
+    {
+      "src": "assets/english/cloze/005-1.webp",
+      "section": "cloze",
+      "sourceGroup": 5,
+      "page": 6,
+      "box": [
+        225,
+        1054,
+        1435,
+        1852
+      ],
+      "width": 1210,
+      "height": 798
+    },
+    {
+      "src": "assets/english/cloze/005-2.webp",
+      "section": "cloze",
+      "sourceGroup": 5,
+      "page": 7,
+      "box": [
+        225,
+        188,
+        1435,
+        1627
+      ],
+      "width": 1210,
+      "height": 1439
+    },
+    {
+      "src": "assets/english/cloze/006-1.webp",
+      "section": "cloze",
+      "sourceGroup": 6,
+      "page": 7,
+      "box": [
+        225,
+        1771,
+        1435,
+        1898
+      ],
+      "width": 1210,
+      "height": 127
+    },
+    {
+      "src": "assets/english/cloze/006-2.webp",
+      "section": "cloze",
+      "sourceGroup": 6,
+      "page": 8,
+      "box": [
+        225,
+        187,
+        1435,
+        1856
+      ],
+      "width": 1210,
+      "height": 1669
+    },
+    {
+      "src": "assets/english/cloze/006-3.webp",
+      "section": "cloze",
+      "sourceGroup": 6,
+      "page": 9,
+      "box": [
+        225,
+        225,
+        1435,
+        531
+      ],
+      "width": 1210,
+      "height": 306
+    },
+    {
+      "src": "assets/english/cloze/007-1.webp",
+      "section": "cloze",
+      "sourceGroup": 7,
+      "page": 9,
+      "box": [
+        225,
+        675,
+        1435,
+        1846
+      ],
+      "width": 1210,
+      "height": 1171
+    },
+    {
+      "src": "assets/english/cloze/007-2.webp",
+      "section": "cloze",
+      "sourceGroup": 7,
+      "page": 10,
+      "box": [
+        225,
+        187,
+        1435,
+        1061
+      ],
+      "width": 1210,
+      "height": 874
+    },
+    {
+      "src": "assets/english/cloze/008-1.webp",
+      "section": "cloze",
+      "sourceGroup": 8,
+      "page": 10,
+      "box": [
+        225,
+        1205,
+        1435,
+        1919
+      ],
+      "width": 1210,
+      "height": 714
+    },
+    {
+      "src": "assets/english/cloze/008-2.webp",
+      "section": "cloze",
+      "sourceGroup": 8,
+      "page": 11,
+      "box": [
+        225,
+        187,
+        1435,
+        1742
+      ],
+      "width": 1210,
+      "height": 1555
+    },
+    {
+      "src": "assets/english/reading/001-1.webp",
+      "section": "reading",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        187,
+        1435,
+        765
+      ],
+      "width": 1210,
+      "height": 578
+    },
+    {
+      "src": "assets/english/reading/002-1.webp",
+      "section": "reading",
+      "sourceGroup": 2,
+      "page": 1,
+      "box": [
+        225,
+        1067,
+        1435,
+        1829
+      ],
+      "width": 1210,
+      "height": 762
+    },
+    {
+      "src": "assets/english/reading/003-1.webp",
+      "section": "reading",
+      "sourceGroup": 3,
+      "page": 2,
+      "box": [
+        225,
+        348,
+        1435,
+        1336
+      ],
+      "width": 1210,
+      "height": 988
+    },
+    {
+      "src": "assets/english/reading/004-1.webp",
+      "section": "reading",
+      "sourceGroup": 4,
+      "page": 2,
+      "box": [
+        225,
+        1675,
+        1435,
+        1916
+      ],
+      "width": 1210,
+      "height": 241
+    },
+    {
+      "src": "assets/english/reading/004-2.webp",
+      "section": "reading",
+      "sourceGroup": 4,
+      "page": 3,
+      "box": [
+        225,
+        187,
+        1435,
+        572
+      ],
+      "width": 1210,
+      "height": 385
+    },
+    {
+      "src": "assets/english/reading/005-1.webp",
+      "section": "reading",
+      "sourceGroup": 5,
+      "page": 3,
+      "box": [
+        225,
+        910,
+        1435,
+        1535
+      ],
+      "width": 1210,
+      "height": 625
+    },
+    {
+      "src": "assets/english/reading/006-1.webp",
+      "section": "reading",
+      "sourceGroup": 6,
+      "page": 4,
+      "box": [
+        225,
+        187,
+        1435,
+        1169
+      ],
+      "width": 1210,
+      "height": 982
+    },
+    {
+      "src": "assets/english/reading/007-1.webp",
+      "section": "reading",
+      "sourceGroup": 7,
+      "page": 4,
+      "box": [
+        225,
+        1439,
+        1435,
+        1839
+      ],
+      "width": 1210,
+      "height": 400
+    },
+    {
+      "src": "assets/english/reading/007-2.webp",
+      "section": "reading",
+      "sourceGroup": 7,
+      "page": 5,
+      "box": [
+        225,
+        186,
+        1435,
+        1238
+      ],
+      "width": 1210,
+      "height": 1052
+    },
+    {
+      "src": "assets/english/reading/008-1.webp",
+      "section": "reading",
+      "sourceGroup": 8,
+      "page": 5,
+      "box": [
+        225,
+        1576,
+        1435,
+        1897
+      ],
+      "width": 1210,
+      "height": 321
+    },
+    {
+      "src": "assets/english/reading/008-2.webp",
+      "section": "reading",
+      "sourceGroup": 8,
+      "page": 6,
+      "box": [
+        225,
+        187,
+        1435,
+        498
+      ],
+      "width": 1210,
+      "height": 311
+    },
+    {
+      "src": "assets/english/reading/009-1.webp",
+      "section": "reading",
+      "sourceGroup": 9,
+      "page": 6,
+      "box": [
+        225,
+        763,
+        1435,
+        1309
+      ],
+      "width": 1210,
+      "height": 546
+    },
+    {
+      "src": "assets/english/reading/010-1.webp",
+      "section": "reading",
+      "sourceGroup": 10,
+      "page": 6,
+      "box": [
+        225,
+        1611,
+        1435,
+        1932
+      ],
+      "width": 1210,
+      "height": 321
+    },
+    {
+      "src": "assets/english/reading/010-2.webp",
+      "section": "reading",
+      "sourceGroup": 10,
+      "page": 7,
+      "box": [
+        225,
+        187,
+        1435,
+        756
+      ],
+      "width": 1210,
+      "height": 569
+    },
+    {
+      "src": "assets/english/reading/011-1.webp",
+      "section": "reading",
+      "sourceGroup": 11,
+      "page": 7,
+      "box": [
+        225,
+        1020,
+        1435,
+        1562
+      ],
+      "width": 1210,
+      "height": 542
+    },
+    {
+      "src": "assets/english/reading/012-1.webp",
+      "section": "reading",
+      "sourceGroup": 12,
+      "page": 8,
+      "box": [
+        225,
+        187,
+        1435,
+        1327
+      ],
+      "width": 1210,
+      "height": 1140
+    },
+    {
+      "src": "assets/english/reading/013-1.webp",
+      "section": "reading",
+      "sourceGroup": 13,
+      "page": 8,
+      "box": [
+        225,
+        1628,
+        1435,
+        1869
+      ],
+      "width": 1210,
+      "height": 241
+    },
+    {
+      "src": "assets/english/reading/013-2.webp",
+      "section": "reading",
+      "sourceGroup": 13,
+      "page": 9,
+      "box": [
+        225,
+        185,
+        1435,
+        1036
+      ],
+      "width": 1210,
+      "height": 851
+    },
+    {
+      "src": "assets/english/reading/014-1.webp",
+      "section": "reading",
+      "sourceGroup": 14,
+      "page": 9,
+      "box": [
+        225,
+        1343,
+        1435,
+        1911
+      ],
+      "width": 1210,
+      "height": 568
+    },
+    {
+      "src": "assets/english/reading/014-2.webp",
+      "section": "reading",
+      "sourceGroup": 14,
+      "page": 10,
+      "box": [
+        225,
+        187,
+        1435,
+        566
+      ],
+      "width": 1210,
+      "height": 379
+    },
+    {
+      "src": "assets/english/reading/015-1.webp",
+      "section": "reading",
+      "sourceGroup": 15,
+      "page": 10,
+      "box": [
+        225,
+        873,
+        1435,
+        1893
+      ],
+      "width": 1210,
+      "height": 1020
+    },
+    {
+      "src": "assets/english/reading/016-1.webp",
+      "section": "reading",
+      "sourceGroup": 16,
+      "page": 11,
+      "box": [
+        225,
+        505,
+        1435,
+        1047
+      ],
+      "width": 1210,
+      "height": 542
+    },
+    {
+      "src": "assets/english/reading/017-1.webp",
+      "section": "reading",
+      "sourceGroup": 17,
+      "page": 11,
+      "box": [
+        225,
+        1311,
+        1435,
+        1890
+      ],
+      "width": 1210,
+      "height": 579
+    },
+    {
+      "src": "assets/english/reading/017-2.webp",
+      "section": "reading",
+      "sourceGroup": 17,
+      "page": 12,
+      "box": [
+        225,
+        224,
+        1435,
+        499
+      ],
+      "width": 1210,
+      "height": 275
+    },
+    {
+      "src": "assets/english/reading/018-1.webp",
+      "section": "reading",
+      "sourceGroup": 18,
+      "page": 12,
+      "box": [
+        225,
+        643,
+        1435,
+        1701
+      ],
+      "width": 1210,
+      "height": 1058
+    },
+    {
+      "src": "assets/english/reading/019-1.webp",
+      "section": "reading",
+      "sourceGroup": 19,
+      "page": 13,
+      "box": [
+        225,
+        186,
+        1435,
+        1112
+      ],
+      "width": 1210,
+      "height": 926
+    },
+    {
+      "src": "assets/english/reading/020-1.webp",
+      "section": "reading",
+      "sourceGroup": 20,
+      "page": 13,
+      "box": [
+        225,
+        1255,
+        1435,
+        1871
+      ],
+      "width": 1210,
+      "height": 616
+    },
+    {
+      "src": "assets/english/reading/020-2.webp",
+      "section": "reading",
+      "sourceGroup": 20,
+      "page": 14,
+      "box": [
+        225,
+        224,
+        1435,
+        499
+      ],
+      "width": 1210,
+      "height": 275
+    },
+    {
+      "src": "assets/english/reading/021-1.webp",
+      "section": "reading",
+      "sourceGroup": 21,
+      "page": 14,
+      "box": [
+        225,
+        643,
+        1435,
+        1590
+      ],
+      "width": 1210,
+      "height": 947
+    },
+    {
+      "src": "assets/english/reading/022-1.webp",
+      "section": "reading",
+      "sourceGroup": 22,
+      "page": 14,
+      "box": [
+        225,
+        1734,
+        1435,
+        1903
+      ],
+      "width": 1210,
+      "height": 169
+    },
+    {
+      "src": "assets/english/reading/022-2.webp",
+      "section": "reading",
+      "sourceGroup": 22,
+      "page": 15,
+      "box": [
+        225,
+        187,
+        1435,
+        877
+      ],
+      "width": 1210,
+      "height": 690
+    },
+    {
+      "src": "assets/english/reading/023-1.webp",
+      "section": "reading",
+      "sourceGroup": 23,
+      "page": 15,
+      "box": [
+        225,
+        1020,
+        1435,
+        1834
+      ],
+      "width": 1210,
+      "height": 814
+    },
+    {
+      "src": "assets/english/reading/023-2.webp",
+      "section": "reading",
+      "sourceGroup": 23,
+      "page": 16,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/reading/024-1.webp",
+      "section": "reading",
+      "sourceGroup": 24,
+      "page": 16,
+      "box": [
+        225,
+        376,
+        1435,
+        1291
+      ],
+      "width": 1210,
+      "height": 915
+    },
+    {
+      "src": "assets/english/reading/025-1.webp",
+      "section": "reading",
+      "sourceGroup": 25,
+      "page": 16,
+      "box": [
+        225,
+        1435,
+        1435,
+        1862
+      ],
+      "width": 1210,
+      "height": 427
+    },
+    {
+      "src": "assets/english/reading/025-2.webp",
+      "section": "reading",
+      "sourceGroup": 25,
+      "page": 17,
+      "box": [
+        225,
+        187,
+        1435,
+        803
+      ],
+      "width": 1210,
+      "height": 616
+    },
+    {
+      "src": "assets/english/reading/026-1.webp",
+      "section": "reading",
+      "sourceGroup": 26,
+      "page": 17,
+      "box": [
+        225,
+        945,
+        1435,
+        1830
+      ],
+      "width": 1210,
+      "height": 885
+    },
+    {
+      "src": "assets/english/reading/027-1.webp",
+      "section": "reading",
+      "sourceGroup": 27,
+      "page": 18,
+      "box": [
+        225,
+        298,
+        1435,
+        1213
+      ],
+      "width": 1210,
+      "height": 915
+    },
+    {
+      "src": "assets/english/reading/028-1.webp",
+      "section": "reading",
+      "sourceGroup": 28,
+      "page": 18,
+      "box": [
+        225,
+        1357,
+        1435,
+        1925
+      ],
+      "width": 1210,
+      "height": 568
+    },
+    {
+      "src": "assets/english/reading/028-2.webp",
+      "section": "reading",
+      "sourceGroup": 28,
+      "page": 19,
+      "box": [
+        225,
+        187,
+        1435,
+        734
+      ],
+      "width": 1210,
+      "height": 547
+    },
+    {
+      "src": "assets/english/reading/029-1.webp",
+      "section": "reading",
+      "sourceGroup": 29,
+      "page": 19,
+      "box": [
+        225,
+        881,
+        1435,
+        1876
+      ],
+      "width": 1210,
+      "height": 995
+    },
+    {
+      "src": "assets/english/reading/030-1.webp",
+      "section": "reading",
+      "sourceGroup": 30,
+      "page": 20,
+      "box": [
+        225,
+        297,
+        1435,
+        1296
+      ],
+      "width": 1210,
+      "height": 999
+    },
+    {
+      "src": "assets/english/reading/031-1.webp",
+      "section": "reading",
+      "sourceGroup": 31,
+      "page": 20,
+      "box": [
+        225,
+        1440,
+        1435,
+        1861
+      ],
+      "width": 1210,
+      "height": 421
+    },
+    {
+      "src": "assets/english/reading/031-2.webp",
+      "section": "reading",
+      "sourceGroup": 31,
+      "page": 21,
+      "box": [
+        225,
+        189,
+        1435,
+        771
+      ],
+      "width": 1210,
+      "height": 582
+    },
+    {
+      "src": "assets/english/reading/032-1.webp",
+      "section": "reading",
+      "sourceGroup": 32,
+      "page": 21,
+      "box": [
+        225,
+        915,
+        1435,
+        1839
+      ],
+      "width": 1210,
+      "height": 924
+    },
+    {
+      "src": "assets/english/reading/032-2.webp",
+      "section": "reading",
+      "sourceGroup": 32,
+      "page": 22,
+      "box": [
+        225,
+        187,
+        1435,
+        232
+      ],
+      "width": 1210,
+      "height": 45
+    },
+    {
+      "src": "assets/english/reading/033-1.webp",
+      "section": "reading",
+      "sourceGroup": 33,
+      "page": 22,
+      "box": [
+        225,
+        375,
+        1435,
+        1544
+      ],
+      "width": 1210,
+      "height": 1169
+    },
+    {
+      "src": "assets/english/reading/034-1.webp",
+      "section": "reading",
+      "sourceGroup": 34,
+      "page": 22,
+      "box": [
+        225,
+        1688,
+        1435,
+        1926
+      ],
+      "width": 1210,
+      "height": 238
+    },
+    {
+      "src": "assets/english/reading/034-2.webp",
+      "section": "reading",
+      "sourceGroup": 34,
+      "page": 23,
+      "box": [
+        225,
+        187,
+        1435,
+        1245
+      ],
+      "width": 1210,
+      "height": 1058
+    },
+    {
+      "src": "assets/english/reading/035-1.webp",
+      "section": "reading",
+      "sourceGroup": 35,
+      "page": 23,
+      "box": [
+        225,
+        1388,
+        1435,
+        1878
+      ],
+      "width": 1210,
+      "height": 490
+    },
+    {
+      "src": "assets/english/reading/035-2.webp",
+      "section": "reading",
+      "sourceGroup": 35,
+      "page": 24,
+      "box": [
+        225,
+        224,
+        1435,
+        1056
+      ],
+      "width": 1210,
+      "height": 832
+    },
+    {
+      "src": "assets/english/reading/036-1.webp",
+      "section": "reading",
+      "sourceGroup": 36,
+      "page": 24,
+      "box": [
+        225,
+        1200,
+        1435,
+        1921
+      ],
+      "width": 1210,
+      "height": 721
+    },
+    {
+      "src": "assets/english/reading/036-2.webp",
+      "section": "reading",
+      "sourceGroup": 36,
+      "page": 25,
+      "box": [
+        225,
+        188,
+        1435,
+        982
+      ],
+      "width": 1210,
+      "height": 794
+    },
+    {
+      "src": "assets/english/reading/037-1.webp",
+      "section": "reading",
+      "sourceGroup": 37,
+      "page": 25,
+      "box": [
+        225,
+        1126,
+        1435,
+        1883
+      ],
+      "width": 1210,
+      "height": 757
+    },
+    {
+      "src": "assets/english/reading/037-2.webp",
+      "section": "reading",
+      "sourceGroup": 37,
+      "page": 26,
+      "box": [
+        225,
+        224,
+        1435,
+        830
+      ],
+      "width": 1210,
+      "height": 606
+    },
+    {
+      "src": "assets/english/reading/038-1.webp",
+      "section": "reading",
+      "sourceGroup": 38,
+      "page": 26,
+      "box": [
+        225,
+        974,
+        1435,
+        1903
+      ],
+      "width": 1210,
+      "height": 929
+    },
+    {
+      "src": "assets/english/reading/038-2.webp",
+      "section": "reading",
+      "sourceGroup": 38,
+      "page": 27,
+      "box": [
+        225,
+        187,
+        1435,
+        757
+      ],
+      "width": 1210,
+      "height": 570
+    },
+    {
+      "src": "assets/english/reading/039-1.webp",
+      "section": "reading",
+      "sourceGroup": 39,
+      "page": 27,
+      "box": [
+        225,
+        901,
+        1435,
+        1915
+      ],
+      "width": 1210,
+      "height": 1014
+    },
+    {
+      "src": "assets/english/reading/039-2.webp",
+      "section": "reading",
+      "sourceGroup": 39,
+      "page": 28,
+      "box": [
+        225,
+        265,
+        1435,
+        646
+      ],
+      "width": 1210,
+      "height": 381
+    },
+    {
+      "src": "assets/english/reading/040-1.webp",
+      "section": "reading",
+      "sourceGroup": 40,
+      "page": 28,
+      "box": [
+        225,
+        790,
+        1435,
+        1919
+      ],
+      "width": 1210,
+      "height": 1129
+    },
+    {
+      "src": "assets/english/reading/040-2.webp",
+      "section": "reading",
+      "sourceGroup": 40,
+      "page": 29,
+      "box": [
+        225,
+        187,
+        1435,
+        531
+      ],
+      "width": 1210,
+      "height": 344
+    },
+    {
+      "src": "assets/english/reading/041-1.webp",
+      "section": "reading",
+      "sourceGroup": 41,
+      "page": 29,
+      "box": [
+        225,
+        675,
+        1435,
+        1884
+      ],
+      "width": 1210,
+      "height": 1209
+    },
+    {
+      "src": "assets/english/reading/041-2.webp",
+      "section": "reading",
+      "sourceGroup": 41,
+      "page": 30,
+      "box": [
+        225,
+        224,
+        1435,
+        379
+      ],
+      "width": 1210,
+      "height": 155
+    },
+    {
+      "src": "assets/english/reading/042-1.webp",
+      "section": "reading",
+      "sourceGroup": 42,
+      "page": 30,
+      "box": [
+        225,
+        523,
+        1435,
+        1898
+      ],
+      "width": 1210,
+      "height": 1375
+    },
+    {
+      "src": "assets/english/reading/043-1.webp",
+      "section": "reading",
+      "sourceGroup": 43,
+      "page": 31,
+      "box": [
+        225,
+        340,
+        1435,
+        1691
+      ],
+      "width": 1210,
+      "height": 1351
+    },
+    {
+      "src": "assets/english/reading/044-1.webp",
+      "section": "reading",
+      "sourceGroup": 44,
+      "page": 31,
+      "box": [
+        225,
+        1835,
+        1435,
+        1926
+      ],
+      "width": 1210,
+      "height": 91
+    },
+    {
+      "src": "assets/english/reading/044-2.webp",
+      "section": "reading",
+      "sourceGroup": 44,
+      "page": 32,
+      "box": [
+        225,
+        187,
+        1435,
+        1465
+      ],
+      "width": 1210,
+      "height": 1278
+    },
+    {
+      "src": "assets/english/reading/045-1.webp",
+      "section": "reading",
+      "sourceGroup": 45,
+      "page": 32,
+      "box": [
+        225,
+        1609,
+        1435,
+        1915
+      ],
+      "width": 1210,
+      "height": 306
+    },
+    {
+      "src": "assets/english/reading/045-2.webp",
+      "section": "reading",
+      "sourceGroup": 45,
+      "page": 33,
+      "box": [
+        225,
+        187,
+        1435,
+        1245
+      ],
+      "width": 1210,
+      "height": 1058
+    },
+    {
+      "src": "assets/english/reading/046-1.webp",
+      "section": "reading",
+      "sourceGroup": 46,
+      "page": 33,
+      "box": [
+        225,
+        1388,
+        1435,
+        1878
+      ],
+      "width": 1210,
+      "height": 490
+    },
+    {
+      "src": "assets/english/reading/046-2.webp",
+      "section": "reading",
+      "sourceGroup": 46,
+      "page": 34,
+      "box": [
+        225,
+        224,
+        1435,
+        1056
+      ],
+      "width": 1210,
+      "height": 832
+    },
+    {
+      "src": "assets/english/reading/047-1.webp",
+      "section": "reading",
+      "sourceGroup": 47,
+      "page": 34,
+      "box": [
+        225,
+        1201,
+        1435,
+        1903
+      ],
+      "width": 1210,
+      "height": 702
+    },
+    {
+      "src": "assets/english/reading/047-2.webp",
+      "section": "reading",
+      "sourceGroup": 47,
+      "page": 35,
+      "box": [
+        225,
+        187,
+        1435,
+        982
+      ],
+      "width": 1210,
+      "height": 795
+    },
+    {
+      "src": "assets/english/reading/048-1.webp",
+      "section": "reading",
+      "sourceGroup": 48,
+      "page": 35,
+      "box": [
+        225,
+        1126,
+        1435,
+        1919
+      ],
+      "width": 1210,
+      "height": 793
+    },
+    {
+      "src": "assets/english/reading/048-2.webp",
+      "section": "reading",
+      "sourceGroup": 48,
+      "page": 36,
+      "box": [
+        225,
+        265,
+        1435,
+        909
+      ],
+      "width": 1210,
+      "height": 644
+    },
+    {
+      "src": "assets/english/writing/001-1.webp",
+      "section": "writing",
+      "sourceGroup": 1,
+      "page": 1,
+      "box": [
+        225,
+        188,
+        1435,
+        1396
+      ],
+      "width": 1210,
+      "height": 1208
+    },
+    {
+      "src": "assets/english/writing/002-1.webp",
+      "section": "writing",
+      "sourceGroup": 2,
+      "page": 2,
+      "box": [
+        225,
+        186,
+        1435,
+        660
+      ],
+      "width": 1210,
+      "height": 474
+    },
+    {
+      "src": "assets/english/writing/003-1.webp",
+      "section": "writing",
+      "sourceGroup": 3,
+      "page": 3,
+      "box": [
+        225,
+        188,
+        1435,
+        1925
+      ],
+      "width": 1210,
+      "height": 1737
+    },
+    {
+      "src": "assets/english/writing/004-1.webp",
+      "section": "writing",
+      "sourceGroup": 4,
+      "page": 4,
+      "box": [
+        225,
+        651,
+        1435,
+        1343
+      ],
+      "width": 1210,
+      "height": 692
+    },
+    {
+      "src": "assets/english/writing/005-1.webp",
+      "section": "writing",
+      "sourceGroup": 5,
+      "page": 4,
+      "box": [
+        225,
+        1793,
+        1435,
+        1892
+      ],
+      "width": 1210,
+      "height": 99
+    },
+    {
+      "src": "assets/english/writing/005-2.webp",
+      "section": "writing",
+      "sourceGroup": 5,
+      "page": 5,
+      "box": [
+        225,
+        186,
+        1435,
+        930
+      ],
+      "width": 1210,
+      "height": 744
+    },
+    {
+      "src": "assets/english/writing/006-1.webp",
+      "section": "writing",
+      "sourceGroup": 6,
+      "page": 5,
+      "box": [
+        225,
+        1383,
+        1435,
+        1910
+      ],
+      "width": 1210,
+      "height": 527
+    },
+    {
+      "src": "assets/english/writing/006-2.webp",
+      "section": "writing",
+      "sourceGroup": 6,
+      "page": 6,
+      "box": [
+        225,
+        189,
+        1435,
+        243
+      ],
+      "width": 1210,
+      "height": 54
+    },
+    {
+      "src": "assets/english/writing/007-1.webp",
+      "section": "writing",
+      "sourceGroup": 7,
+      "page": 6,
+      "box": [
+        225,
+        803,
+        1435,
+        1411
+      ],
+      "width": 1210,
+      "height": 608
+    },
+    {
+      "src": "assets/english/writing/008-1.webp",
+      "section": "writing",
+      "sourceGroup": 8,
+      "page": 7,
+      "box": [
+        225,
+        188,
+        1435,
+        1209
+      ],
+      "width": 1210,
+      "height": 1021
+    }
+  ]
+}

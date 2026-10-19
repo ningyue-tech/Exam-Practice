@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN" data-access-state="checking">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="宁跃教育英语题库，支持七类分项练习、自定义模拟、整组阅读材料、进度恢复与交卷评分。">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#2058D8">
+  <title>英语科目组 · 宁跃教育</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/ningyue-mark.svg">
+  <link rel="stylesheet" href="./brand.css">
+  <link rel="stylesheet" href="./access.css">
+  <link rel="stylesheet" href="./exam-brand.css">
+  <link rel="stylesheet" href="./english-exam.css">
+  <script src="./brand.js" defer></script>
+  <script src="./site.js" defer></script>
+  <script src="./access.js?v=english-20261019" defer></script>
+  <script src="./data/english-bank.js?v=20261019" defer></script>
+  <script src="./english-exam-core.js?v=20261019" defer></script>
+  <script src="./english-exam.js?v=20261019" defer></script>
+</head>
+<body class="ny-exam english-exam">
+  <section id="accessGate" aria-busy="true">
+    <a class="ny-brand" href="./index.html" aria-label="宁跃教育，返回首页"><img src="./assets/ningyue-mark.svg" width="48" height="48" data-brand-logo alt="宁跃教育标志"><span><strong data-brand="name">宁跃教育</strong><small data-brand="englishName">NINGYUE EDUCATION</small></span></a>
+    <h2>先核对信息，再开始英语练习</h2><p id="accessMessage">正在读取英语科目组的名单配置…</p>
+    <a id="accessLogin" class="gate-primary" href="./login.html?subject=english">前往名单验证</a><a href="./index.html">返回科目首页</a>
+    <p class="muted">英语名单独立核对。仅在浏览器中匹配预设姓名和手机号，不发送短信。</p>
+    <noscript><p>请启用 JavaScript，名单验证和考试答题才可运行。</p></noscript>
+  </section>
+  <header class="top ny-exam-header">
+    <div class="ny-exam-brand"><a class="ny-brand" href="./index.html" aria-label="宁跃教育，返回首页"><img src="./assets/ningyue-mark.svg" width="48" height="48" data-brand-logo alt="宁跃教育标志"><span><strong data-brand="name">宁跃教育</strong><small data-brand="englishName">NINGYUE EDUCATION</small></span></a><span class="ny-header-divider"></span><div class="ny-exam-heading"><h1>英语科目组</h1><small>分项练习 · 自定义模拟</small></div></div>
+    <div class="ny-exam-header-right"><a class="ny-exam-home" href="./index.html#subjects">← 科目首页</a><div class="ny-timer-box"><svg viewBox="0 0 24 24" class="ny-icon" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><div><small>剩余时间</small><span class="timer" id="timer" role="timer" aria-label="练习剩余时间">--:--</span></div></div></div>
+  </header>
+  <main class="layout">
+    <aside><div class="card side">
+      <details class="ny-settings-disclosure" open><summary>练习设置 <span id="settingsSummary">每题2分</span></summary><div id="settings">
+        <div class="row"><label for="title">练习名称</label><input id="title" maxlength="80" value="宁跃教育 · 英语练习"></div>
+        <div class="row"><label for="minutes">时长（分钟）</label><input id="minutes" type="number" min="1" max="240" step="1" value="60"></div>
+        <div class="row"><label for="mode">练习方式</label><select id="mode"><option value="practice">分项练习</option><option value="custom">自定义模拟</option></select></div>
+        <div id="practiceSettings">
+          <div class="row"><label for="practiceSection">练习板块</label><select id="practiceSection"></select></div>
+          <div class="row"><label for="practiceCount">抽取题数</label><input id="practiceCount" type="number" min="1" step="1" value="10"></div>
+          <p class="muted" id="practiceHint"></p><button class="small-action" type="button" id="allPracticeBtn">选择该板块全部题目</button>
+        </div>
+        <div id="customSettings" hidden><p class="muted">设置各板块小题数；0表示不选。材料及其小题始终整组抽取。</p><div id="sectionCounts"></div></div>
+        <p id="totalHint" class="total-hint" aria-live="polite"></p>
+        <p class="muted">每题2分，答错或未答不得分；这是练习计分，不代表正式考试配比。修改设置在下次开始时生效。</p>
+      </div></details>
+      <p id="settingsError" class="settings-error" role="alert" hidden></p>
+      <div class="btns">
+        <button class="btn primary" type="button" id="startBtn">开始练习</button>
+        <button class="btn danger" type="button" id="submitBtn" disabled>交卷评分</button>
+        <button class="btn light" type="button" id="missingBtn" disabled>查看未答</button>
+        <button class="btn light" type="button" id="printBtn" disabled>打印试卷</button>
+        <button class="btn light" type="button" id="downloadBtn" disabled>下载成绩单</button>
+        <button class="btn light" type="button" id="verifyBtn" hidden>随机答题验证</button>
+      </div>
+      <h3><span class="ny-side-line"></span>答题卡</h3><p class="muted" id="navHint">开始练习后，点击题号可定位题目。</p><div id="nav" class="navgrid" aria-label="答题卡"></div>
+      <div id="missingPanel" hidden><p id="missingTitle"></p><div id="missingNums"></div></div>
+      <p class="muted" id="saveNote">进度按考生、科目和验证模式分别保存在当前浏览器。刷新可继续，离开页面期间仍会计时。</p>
+    </div></aside>
+    <section>
+      <div class="candidate-strip"><strong>当前考生</strong><span id="candidateInfo"></span><button id="logoutBtn" type="button">退出本科目</button></div>
+      <div class="notice" id="studentNote">七类英语题库支持分项练习与自定义模拟。原题图片保留题干、选项和材料；在图片下方选择答案。交际对话、阅读、完形和书面表达按完整材料组卷。阅读部分含判断小题，以A（正确）/ B（错误）作答。</div>
+      <div class="notice" id="testNote" hidden><b>功能验证模式</b>：随机答题并交卷，记录与普通练习隔离；验证结果不代表真实学习成绩。</div>
+      <div id="stats" class="stats"></div>
+      <div class="card" id="exam"><div class="empty ny-exam-ready"><span class="ny-ready-icon" aria-hidden="true">Aa</span><p class="ny-eyebrow">NINGYUE EDUCATION</p><h2>把英语练习，拆成每天的小进步</h2><p>从一个板块开始，也可以自定义组合。<br>题目原图可点击放大，交卷后查看答案。</p><div id="sectionOverview" class="section-overview"></div><button class="ny-button" type="button" id="readyStartBtn">开始英语练习 →</button><small>先设置练习内容；点击开始后倒计时启动。</small></div></div>
+    </section>
+  </main>
+  <dialog id="imageDialog" class="image-dialog"><div class="image-dialog-toolbar"><span>原题图片 · 可滚动查看</span><button type="button" id="closeImageBtn">关闭 ×</button></div><img id="enlargedImage" alt="英语原题放大图"></dialog>
+  <footer class="ny-exam-footer">© <span data-year>2026</span> <span data-brand="name">宁跃教育</span> · 在线考试平台 <span>｜</span> <a href="./guide.html#data">使用与数据说明</a></footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "sourcePages": 113,
+  "groups": 280,
+  "questions": 672,
+  "losslessCropPixelComparisons": 348,
+  "answerLineWhiteChecks": 217,
+  "sourcePagesWithCompleteContentCoverage": 113,
+  "nonAnswerContentWithinErasedRows": 0,
+  "manualAnswerReviews": 34,
+  "sourceGroupNumbersOcrConfirmed": 268,
+  "sourceGroupNumbersManuallyReviewed": 12,
+  "sourceGroupNumberConflicts": 0,
+  "sections": {
+    "pronunciation": {
+      "groups": 40,
+      "questions": 40,
+      "pages": 8,
+      "ocrConfirmed": 40,
+      "manuallyReviewed": 1,
+      "trueFalse": 0
+    },
+    "dialogue": {
+      "groups": 24,
+      "questions": 120,
+      "pages": 10,
+      "ocrConfirmed": 120,
+      "manuallyReviewed": 4,
+      "trueFalse": 0
+    },
+    "vocabulary": {
+      "groups": 120,
+      "questions": 120,
+      "pages": 25,
+      "ocrConfirmed": 118,
+      "manuallyReviewed": 4,
+      "trueFalse": 0
+    },
+    "pictures": {
+      "groups": 32,
+      "questions": 32,
+      "pages": 16,
+      "ocrConfirmed": 30,
+      "manuallyReviewed": 3,
+      "trueFalse": 0
+    },
+    "cloze": {
+      "groups": 8,
+      "questions": 80,
+      "pages": 11,
+      "ocrConfirmed": 80,
+      "manuallyReviewed": 4,
+      "trueFalse": 0
+    },
+    "reading": {
+      "groups": 48,
+      "questions": 240,
+      "pages": 36,
+      "ocrConfirmed": 153,
+      "manuallyReviewed": 16,
+      "trueFalse": 80
+    },
+    "writing": {
+      "groups": 8,
+      "questions": 40,
+      "pages": 7,
+      "ocrConfirmed": 40,
+      "manuallyReviewed": 2,
+      "trueFalse": 0
+    }
+  }
+}

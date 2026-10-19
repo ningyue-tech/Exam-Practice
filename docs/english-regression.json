@@ -1,0 +1,187 @@
+{
+  "date": "2026-10-19",
+  "passed": 45,
+  "failed": 0,
+  "results": [
+    {
+      "name": "英语独立名单可登录，手机号支持 +86 和空格",
+      "passed": true
+    },
+    {
+      "name": "汽车名单不能用于英语登录",
+      "passed": true
+    },
+    {
+      "name": "停用学员不能登录",
+      "passed": true
+    },
+    {
+      "name": "原两科名单仍可登录并与英语状态隔离",
+      "passed": true
+    },
+    {
+      "name": "英语进度按学员及验证模式隔离",
+      "passed": true
+    },
+    {
+      "name": "英语登录与考试链接保留验证模式",
+      "passed": true
+    },
+    {
+      "name": "已过期的英语会话失效",
+      "passed": true
+    },
+    {
+      "name": "旧名单未配置英语时不影响原两科",
+      "passed": true
+    },
+    {
+      "name": "auto-exam.html 原题库数量、唯一ID及答案结构",
+      "passed": true
+    },
+    {
+      "name": "marketing-exam.html 原题库数量、唯一ID及答案结构",
+      "passed": true
+    },
+    {
+      "name": "access.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "auto-exam.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "auto-exam.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "brand.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "english-exam-core.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "english-exam.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "english-exam.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "english-exam.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "guide.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "guide.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "index.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "index.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "login.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "login.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "marketing-exam.html JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "marketing-exam.html 本地静态资源存在",
+      "passed": true
+    },
+    {
+      "name": "site.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "whitelist.js JavaScript 语法",
+      "passed": true
+    },
+    {
+      "name": "英语完整包含7个板块，题号与答案可解析",
+      "passed": true
+    },
+    {
+      "name": "英语扫描题和材料图片全部在仓库内且存在",
+      "passed": true
+    },
+    {
+      "name": "导入保留语音40题、词汇120题、图文32题及交际24组、阅读48组、书面8组",
+      "passed": true
+    },
+    {
+      "name": "阅读判断题映射与人工复核的源答案一致",
+      "passed": true
+    },
+    {
+      "name": "语音辨析 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "交际对话 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "词汇与语法 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "图文理解 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "完形填空 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "阅读理解 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "书面表达 多次组卷保持题数准确、无重复且材料完整",
+      "passed": true
+    },
+    {
+      "name": "不满足整组要求的题数明确拒绝，空卷和非法设置拒绝",
+      "passed": true
+    },
+    {
+      "name": "英语50题全对100分、全错0分、未答0分",
+      "passed": true
+    },
+    {
+      "name": "英语混合作答统计与分项分数一致，非法选项不计为已答",
+      "passed": true
+    },
+    {
+      "name": "英语刷新恢复保留同一试卷、作答、期限和漏题标记",
+      "passed": true
+    },
+    {
+      "name": "英语恢复拒绝其他考生、跨模式、损坏题号与被拆散的材料",
+      "passed": true
+    },
+    {
+      "name": "英语题库无效答案、重复题号和外部图片会被拒绝",
+      "passed": true
+    }
+  ]
+}

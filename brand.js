@@ -5,7 +5,7 @@ window.NINGYUE_BRAND = {
   englishName: "NINGYUE EDUCATION",
   platformName: "在线考试平台",
   slogan: "让学习更扎实，让进步看得见。",
-  description: "围绕职业技能理论学习，提供分科练习、模拟机考与答题复盘。当前开放汽车维修、商务营销两门科目。",
+  description: "围绕职业技能与英语学习，提供分科练习、模拟机考与答题复盘。当前开放汽车科目组、市场营销科目组与英语科目组。",
   contactPhone: "",
   contactEmail: "",
   contactAddress: "",
