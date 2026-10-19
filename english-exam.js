@@ -138,7 +138,7 @@
   }
   function renderPaper() {
     const paper = state.paper;
-    let html = '<div class="paperhead"><h2>' + esc(state.title) + '</h2><p class="candidate-caption">考生：' + esc(candidate.name) + ' · ' + esc(candidate.maskedPhone) + ' · 英语</p><div class="meta">' + (state.mode === 'practice' ? '分项练习' : '自定义模拟') + ' · 共' + paper.questions.length + '小题 · 满分' + paper.max + '分 · ' + state.minutes + '分钟<br>练习计分：每小题2分，答错或未答不得分；材料题整组保留。</div></div><div id="result"></div>';
+    let html = '<div class="paperhead"><h2>' + esc(state.title) + '</h2><p class="candidate-caption">考生：' + esc(candidate.name) + ' · 手机尾号 ' + esc(candidate.maskedPhone) + ' · 英语</p><div class="meta">' + (state.mode === 'practice' ? '分项练习' : '自定义模拟') + ' · 共' + paper.questions.length + '小题 · 满分' + paper.max + '分 · ' + state.minutes + '分钟<br>练习计分：每小题2分，答错或未答不得分；材料题整组保留。</div></div><div id="result"></div>';
     const questions = new Map(paper.questions.map(question => [question.id, question]));
     let lastSection = '';
     paper.groups.forEach(group => {
@@ -258,7 +258,7 @@
     if (!authorized() || !state || !state.submitted) return;
     const score = Engine.scorePaper(state.paper, state.answers);
     const groups = new Map(state.paper.groups.map(group => [group.id, group]));
-    const content = ['宁跃教育 · 英语练习成绩单', state.title, '考生：' + candidate.name, '手机号：' + candidate.maskedPhone, '科目：英语', '分数：' + score.score + ' / ' + score.max,
+    const content = ['宁跃教育 · 英语练习成绩单', state.title, '考生：' + candidate.name, '手机号尾号：' + candidate.maskedPhone, '科目：英语', '分数：' + score.score + ' / ' + score.max,
       '模式：' + (TEST_MODE ? '功能验证（非真实成绩）' : '普通练习'), '练习计分：每小题2分；答错或未答不得分。',
       '交卷方式：' + (state.submitReason === 'timeout' ? '时间到自动交卷' : state.submitReason === 'verify' ? '随机答题验证' : '手动交卷'),
       '答对：' + score.correct + '；答错：' + score.wrong + '；未答：' + score.missing, '成绩由当前浏览器生成。', '',
@@ -328,7 +328,7 @@
       if (!Engine) throw new Error('英语练习脚本未加载，请检查 english-exam-core.js。');
       bank = Engine.validateBank(window.ENGLISH_BANK);
       storageKey = ExamAccess.progressKey(SUBJECT, candidate, TEST_MODE);
-      $('candidateInfo').textContent = candidate.name + ' · ' + candidate.maskedPhone;
+      $('candidateInfo').textContent = candidate.name + ' · 手机尾号 ' + candidate.maskedPhone;
       setupSettings(); bindEvents(); renderStats(); restore();
       if (authorized()) document.documentElement.dataset.accessState = 'allowed';
     } catch (problem) { ExamAccess.blockExam(SUBJECT, problem.message || '英语题库初始化失败，请刷新重试。'); }

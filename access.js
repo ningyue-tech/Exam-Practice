@@ -13,19 +13,14 @@
   const verified = new Map(), generations = new Map();
   const validSubject = s => typeof s === 'string' && Object.hasOwn(SUBJECTS, s);
   const normalizeName = s => String(s ?? '').normalize('NFKC').trim();
-  function normalizePhone(s) {
-    let p = String(s ?? '').normalize('NFKC').trim().replace(/[\s-]/g, '');
-    if(p.startsWith('+86')) p=p.slice(3);
-    else if(p.startsWith('0086')) p=p.slice(4);
-    else if(/^86\d{11}$/.test(p)) p=p.slice(2);
-    return p;
-  }
-  const phoneValid = p => /^1[3-9]\d{9}$/.test(p);
-  const maskPhone = p => p.slice(0,3) + '****' + p.slice(-4);
+  const normalizePhone = s => String(s ?? '').normalize('NFKC').trim();
+  const phoneValid = p => /^\d{6}$/.test(p);
+  const legacyPhoneValid = p => /^1[3-9]\d{9}$/.test(p);
+  const maskPhone = p => '*****' + p;
   const storageKey = s => prefix + 'session:' + s;
   function validate(raw) {
     if(!raw || typeof raw !== 'object') throw new Error('名单文件未正确加载，请检查 whitelist.js。');
-    if(raw.version!==2 || raw.algorithm!=='PBKDF2-SHA-256' || raw.iterations!==600000)
+    if(raw.version!==3 || raw.credential!=='name-phone-last6' || raw.algorithm!=='PBKDF2-SHA-256' || raw.iterations!==600000)
       throw new Error('名单格式已升级，请使用本地名单工具生成新版 whitelist.js，并刷新页面。');
     const hours = raw.sessionHours === undefined ? 12 : raw.sessionHours;
     if(typeof hours !== 'number' || !Number.isFinite(hours) || hours <= 0 || hours > 168)
@@ -56,7 +51,7 @@
     const rows=config[s].filter(r=>r.enabled);
     if(!rows.length)return null;
     const subtle=window.crypto.subtle;
-    const key=await subtle.importKey('raw',new TextEncoder().encode(JSON.stringify(['exam-whitelist-v2',s,name,phone])), 'PBKDF2',false,['deriveBits']);
+    const key=await subtle.importKey('raw',new TextEncoder().encode(JSON.stringify(['exam-whitelist-v3',s,name,phone])), 'PBKDF2',false,['deriveBits']);
     // Bound concurrency; only login/initial restoration performs expensive derivation.
     for(let i=0;i<rows.length;i+=4) {
       const batch=rows.slice(i,i+4);
@@ -70,10 +65,11 @@
     }
     return null;
   }
-  function validSession(s,d) {
+  function validSession(s,d,allowLegacy=false) {
     const now=Date.now();
-    return d && d.version===1 && d.subject===s && typeof d.name==='string' && !!d.name && d.name.length<=80
-      && d.name===normalizeName(d.name) && typeof d.phone==='string' && phoneValid(d.phone)
+    return d && d.subject===s && typeof d.name==='string' && !!d.name && d.name.length<=80
+      && d.name===normalizeName(d.name) && typeof d.phone==='string'
+      && ((d.version===2 && phoneValid(d.phone)) || (allowLegacy && d.version===1 && legacyPhoneValid(d.phone)))
       && Number.isFinite(d.issuedAt) && Number.isFinite(d.expiresAt) && d.issuedAt<=now && d.expiresAt>now
       && d.expiresAt>d.issuedAt && now-d.issuedAt<config.sessionHours*3600000
       && d.expiresAt-d.issuedAt<=config.sessionHours*3600000;
@@ -83,12 +79,22 @@
       let raw,d;
       try {raw=sessionStorage.getItem(storageKey(s));if(!raw)return;d=JSON.parse(raw);}
       catch(_){clear(s,false);return;}
-      if(!validSession(s,d)){clear(s,false);return;}
+      if(!validSession(s,d,true)){clear(s,false);return;}
       const generation=generations.get(s)||0;
-      const member=await find(s,d.name,d.phone);
+      const legacyFullPhone=d.version===1?d.phone:null;
+      const phone=legacyFullPhone?legacyFullPhone.slice(-6):d.phone;
+      const member=await find(s,d.name,phone);
       try {
         if((generations.get(s)||0)!==generation || sessionStorage.getItem(storageKey(s))!==raw)return;
-        if(member && validSession(s,d))verified.set(s,{raw,member});else clear(s,false);
+        if(!member || !validSession(s,d,true)){clear(s,false);return;}
+        if(d.version===1) {
+          d={version:2,subject:s,name:d.name,phone,issuedAt:d.issuedAt,expiresAt:d.expiresAt};
+          raw=JSON.stringify(d);sessionStorage.setItem(storageKey(s),raw);
+        }
+        verified.set(s,{raw,member});
+        // A migrated session no longer carries the full source identity. Do not
+        // retry by tail on later refreshes and accidentally adopt another record.
+        if(legacyFullPhone)migrateProgress(s,d,legacyFullPhone);
       }catch(_){clear(s,false);}
     }));
   }
@@ -139,14 +145,15 @@
     if(generations.get(s)!==generation)throw new Error('本次验证已取消，请重新验证。');
     const name=normalizeName(rawName),phone=normalizePhone(rawPhone);
     if(!name || name.length>80)throw new Error('请输入有效姓名。');
-    if(!phoneValid(phone))throw new Error('请输入有效的11位大陆手机号，可带 +86 前缀。');
+    if(!phoneValid(phone))throw new Error('请输入手机号后6位数字，开头的0也需保留。');
     const r=await find(s,name,phone);
     if(generations.get(s)!==generation)throw new Error('本次验证已取消，请重新验证。');
-    if(!r)throw new Error('姓名和手机号未匹配本科目的有效名单，请核对所选科目或联系管理员。');
+    if(!r)throw new Error('姓名和手机号后6位未匹配本科目的有效名单，请核对所选科目或联系管理员。');
     const now=Date.now();
-    const d={version:1,subject:s,name,phone,issuedAt:now,expiresAt:now+config.sessionHours*3600000};
+    const d={version:2,subject:s,name,phone,issuedAt:now,expiresAt:now+config.sessionHours*3600000};
     try{const raw=JSON.stringify(d);sessionStorage.setItem(storageKey(s),raw);verified.set(s,{raw,member:r});}
     catch(_){throw new Error('浏览器禁止保存本地验证状态。请允许网站存储后重试；本地文件可改用本地服务器打开。');}
+    migrateProgress(s,d);
     return session(s);
   }
   function logout(s) {
@@ -162,15 +169,46 @@
   }
   function progressKey(s,person,test=false) {
     if(!validSubject(s) || !person || person.subject!==s)throw new Error('名单验证尚未通过。');
-    // 不继承旧匿名版记录。姓名、手机号、科目和验证模式分别隔离。
+    // 不继承旧匿名版记录。姓名、手机尾号、科目和验证模式分别隔离。
     return prefix+'progress:'+s+':'+encodeURIComponent(JSON.stringify([person.name,person.phone]))+(test?':verification':':practice');
+  }
+  function migrateProgress(s,person,legacyFullPhone=null) {
+    // Only move an unambiguous record after the new credential has been verified.
+    // Existing last-six progress always wins. A failed write leaves the old record intact.
+    try {
+      const stem=prefix+'progress:'+s+':';
+      for(const test of [false,true]) {
+        const target=progressKey(s,person,test),suffix=test?':verification':':practice';
+        if(localStorage.getItem(target)!==null)continue;
+        const matches=[];
+        for(let i=0;i<localStorage.length;i++) {
+          const key=localStorage.key(i);
+          if(!key || !key.startsWith(stem) || !key.endsWith(suffix))continue;
+          try {
+            const identity=JSON.parse(decodeURIComponent(key.slice(stem.length,-suffix.length)));
+            if(!Array.isArray(identity) || identity.length!==2 || identity[0]!==person.name
+              || typeof identity[1]!=='string' || !legacyPhoneValid(identity[1]) || identity[1].slice(-6)!==person.phone)continue;
+            if(legacyFullPhone && identity[1]!==legacyFullPhone)continue;
+            const raw=localStorage.getItem(key),saved=JSON.parse(raw);
+            if(!saved || saved.version!==(s==='english'?1:2) || !saved.owner
+              || saved.owner.subject!==s || saved.owner.name!==identity[0] || saved.owner.phone!==identity[1])continue;
+            matches.push({key,raw,saved});
+          }catch(_){}
+        }
+        if(matches.length!==1 || localStorage.getItem(target)!==null)continue;
+        const {key,raw,saved}=matches[0];
+        const next=JSON.stringify({...saved,owner:{...saved.owner,phone:person.phone}});
+        localStorage.setItem(target,next);
+        if(localStorage.getItem(target)===next && localStorage.getItem(key)===raw)localStorage.removeItem(key);
+      }
+    }catch(_){}
   }
   function samePerson(a,b) {return !!a && !!b && a.subject===b.subject && a.name===b.name && a.phone===b.phone;}
   function blockExam(s,message) {
     document.documentElement.dataset.accessState='blocked';
     const gate=document.getElementById('accessGate');
     if(!gate)return;
-    const m=document.getElementById('accessMessage');if(m)m.textContent=message||'请先完成本科目的姓名与手机号名单验证。';
+    const m=document.getElementById('accessMessage');if(m)m.textContent=message||'请先完成本科目的姓名与手机号后6位名单验证。';
     const a=document.getElementById('accessLogin');
     if(a)a.href=loginUrl(s,new URLSearchParams(location.search).get('test')==='1');
     gate.setAttribute('aria-busy','false');

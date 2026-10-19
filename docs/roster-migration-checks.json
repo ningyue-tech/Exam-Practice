@@ -2,6 +2,8 @@
   "date": "2026-10-19",
   "passed": true,
   "sourceCommit": "f49b6a6",
+  "schemaVersion": 3,
+  "credential": "name-phone-last6",
   "students": 31,
   "records": 36,
   "counts": {
@@ -10,15 +12,32 @@
     "english": 1
   },
   "validLogins": 36,
+  "enabledRecords": 36,
+  "nameAndLast6Collisions": 0,
   "originalPermissionsAndEnabledPreserved": true,
   "rosterContainsNoPlaintextIdentities": true,
-  "sessionRefreshAndProgressKeysPreserved": true,
+  "currentTrackedFilesContainNoStudentNamesOrFullPhones": true,
+  "sessionRefreshPreserved": true,
+  "legacySessionsMigrated": 3,
+  "legacyProgressRecordsMigrated": 6,
   "nodeWebCryptoTimings": {
-    "allLoginMs": 11020,
-    "autoWrongLoginMs": 614
+    "allLoginMs": 12515,
+    "autoWrongLoginMs": 720
   },
   "limitations": [
     "Browser UI and low-end mobile timing not verified",
     "Previous Git commits still contain plaintext roster; repository must remain private until history is handled"
-  ]
+  ],
+  "automatedChecks": {
+    "roster": {
+      "passed": 67,
+      "failed": 0
+    },
+    "exams": {
+      "passed": 45,
+      "failed": 0
+    },
+    "maintenanceTool": "passed",
+    "phoneInputSyntheticDOM": "passed"
+  }
 }

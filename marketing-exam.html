@@ -26,8 +26,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{ou
 details{margin:14px 0}summary{cursor:pointer;font-weight:700}.side h3{font-size:16px}.row input[disabled],.row select[disabled]{background:#f8fafc;color:#64748b}
 @media(max-width:900px){.top{padding:12px}.top h1{font-size:17px}.top small{font-size:11px}.timer{font-size:22px;margin-left:10px}.layout{padding:10px;gap:12px}.side{padding:14px;max-height:none}.empty{padding:45px 15px}#nav{grid-template-columns:repeat(10,1fr)}.q{scroll-margin-top:110px}}
 @media print{.notice,#missingPanel,.home-link{display:none!important}.q{break-inside:avoid}.paperhead h2{font-size:22px}.option{padding:4px 8px;margin:3px 0}}
-</style><link rel="stylesheet" href="./access.css"><script src="./access.js?v=roster-hash-20261019"></script><link rel="icon" type="image/svg+xml" href="./assets/ningyue-mark.svg"><meta name="theme-color" content="#2058D8"><link rel="stylesheet" href="./brand.css"><link rel="stylesheet" href="./exam-brand.css"><script src="./brand.js"></script><script src="./site.js?v=subject-groups-20260926" defer></script></head><body class="ny-exam">
-<section id="accessGate" aria-busy="true"><a class="ny-brand" href="./index.html" aria-label="宁跃教育，返回首页"><img src="./assets/ningyue-mark.svg" width="48" height="48" data-brand-logo alt="宁跃教育标志"><span><strong data-brand="name">宁跃教育</strong><small data-brand="englishName">NINGYUE EDUCATION</small></span></a><h2>先核对信息，再开始练习</h2><p id="accessMessage">正在读取本科目的名单配置…</p><a id="accessLogin" class="gate-primary" href="./login.html?subject=marketing">前往名单验证</a><a href="./index.html">返回科目首页</a><p class="muted">网站使用名单校验值在本浏览器核对输入，不发送短信，不提供服务端身份认证；前端入口校验可绕过。</p><noscript><p>请启用 JavaScript，名单验证和考试答题才可运行。</p></noscript></section>
+</style><link rel="stylesheet" href="./access.css"><script src="./access.js?v=roster-last6-20261019"></script><link rel="icon" type="image/svg+xml" href="./assets/ningyue-mark.svg"><meta name="theme-color" content="#2058D8"><link rel="stylesheet" href="./brand.css"><link rel="stylesheet" href="./exam-brand.css"><script src="./brand.js"></script><script src="./site.js?v=subject-groups-20260926" defer></script></head><body class="ny-exam">
+<section id="accessGate" aria-busy="true"><a class="ny-brand" href="./index.html" aria-label="宁跃教育，返回首页"><img src="./assets/ningyue-mark.svg" width="48" height="48" data-brand-logo alt="宁跃教育标志"><span><strong data-brand="name">宁跃教育</strong><small data-brand="englishName">NINGYUE EDUCATION</small></span></a><h2>先核对信息，再开始练习</h2><p id="accessMessage">正在读取本科目的名单配置…</p><a id="accessLogin" class="gate-primary" href="./login.html?subject=marketing">前往名单验证</a><a href="./index.html">返回科目首页</a><p class="muted">网站使用名单校验值在本浏览器核对姓名和手机号后6位，不发送短信，不提供服务端身份认证；前端入口校验可绕过。</p><noscript><p>请启用 JavaScript，名单验证和考试答题才可运行。</p></noscript></section>
 
 <header class="top ny-exam-header"><div class="ny-exam-brand"><a class="ny-brand" href="./index.html" aria-label="宁跃教育，返回首页"><img src="./assets/ningyue-mark.svg" width="48" height="48" data-brand-logo alt="宁跃教育标志"><span><strong data-brand="name">宁跃教育</strong><small data-brand="englishName">NINGYUE EDUCATION</small></span></a><span class="ny-header-divider"></span><div class="ny-exam-heading"><h1>市场营销科目组</h1><small>理论模拟机考 · 满分100分</small></div></div><div class="ny-exam-header-right"><a class="ny-exam-home" href="./index.html#subjects">← 科目首页</a><div class="ny-timer-box"><svg viewBox="0 0 24 24" class="ny-icon" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 6v6l4 2"/></svg><div><small>剩余时间</small><span class="timer" id="timer" role="timer" aria-label="考试剩余时间">--:--</span></div></div></div></header>
 <main class="layout"><aside><div class="card side">
@@ -185,7 +185,7 @@ function question(q){
   return h+'</div>';
 }
 function render(){
-  let h=`<div class="paperhead"><h2>${esc(examTitle)}</h2><p class="candidate-caption">考生：${esc(examCandidate.name)} · ${esc(examCandidate.maskedPhone)} · ${esc(ExamAccess.subjects[EXAM_SUBJECT])}</p><div class="meta">共 ${paper.length} 题 · 满分100分 · ${examMinutes}分钟 · ${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}</div></div><div id="result"></div>`;
+  let h=`<div class="paperhead"><h2>${esc(examTitle)}</h2><p class="candidate-caption">考生：${esc(examCandidate.name)} · 手机尾号 ${esc(examCandidate.maskedPhone)} · ${esc(ExamAccess.subjects[EXAM_SUBJECT])}</p><div class="meta">共 ${paper.length} 题 · 满分100分 · ${examMinutes}分钟 · ${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}</div></div><div id="result"></div>`;
   for(const t of types){const a=paper.filter(q=>q.type===t);if(a.length)h+=`<div class="sectiontitle">${names[t]}（${a.length}题，每题${t==='multiple'?2:1}分）</div>`+a.map(question).join('');}
   $('exam').innerHTML=h;renderResult();
 }
@@ -273,7 +273,7 @@ function downloadResult(){
   if(!ensureExamAccess())return false;
   if(!submitted){alert('交卷后才可下载成绩单');return;}
   const s=scoring();
-  const content=['宁跃教育 · 练习成绩单',examTitle,`考生：${examCandidate.name}`,`手机号：${examCandidate.maskedPhone}`,`科目：${ExamAccess.subjects[EXAM_SUBJECT]}`,`分数：${s.score} / ${s.max}`,`交卷方式：${submitReason==='verify'?'随机验证（非真实成绩）':submitReason==='timeout'?'到时自动交卷':'手动交卷'}`,`计分规则：${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}`,'成绩由浏览器生成，未由服务器认证。','',...paper.map(q=>`${q.no}. [${names[q.type]}] ${q.stem}\n你的答案：${userText(q)||'未作答'}；题库答案：${correctText(q)}；得分：${earned(q)}/${points(q)}\n`)].join('\n');
+  const content=['宁跃教育 · 练习成绩单',examTitle,`考生：${examCandidate.name}`,`手机号尾号：${examCandidate.maskedPhone}`,`科目：${ExamAccess.subjects[EXAM_SUBJECT]}`,`分数：${s.score} / ${s.max}`,`交卷方式：${submitReason==='verify'?'随机验证（非真实成绩）':submitReason==='timeout'?'到时自动交卷':'手动交卷'}`,`计分规则：${examRule==='partial'?'多选漏选得半分，错选不得分':'多选全部选对才得分'}`,'成绩由浏览器生成，未由服务器认证。','',...paper.map(q=>`${q.no}. [${names[q.type]}] ${q.stem}\n你的答案：${userText(q)||'未作答'}；题库答案：${correctText(q)}；得分：${earned(q)}/${points(q)}\n`)].join('\n');
   const url=URL.createObjectURL(new Blob(['\ufeff'+content],{type:'text/plain;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='宁跃教育_市场营销科目组_考试成绩.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
 }
@@ -284,7 +284,7 @@ if(window.ExamAccess){
     if(!person)return;
     examCandidate=person;
     STORAGE_KEY=ExamAccess.progressKey(EXAM_SUBJECT,person,TEST_MODE);
-    $('candidateInfo').textContent=person.name+' · '+person.maskedPhone;
+    $('candidateInfo').textContent=person.name+' · 手机尾号 '+person.maskedPhone;
     $('logoutBtn').addEventListener('click',()=>{
       if(paper.length&&!submitted&&!confirm('退出后考试仍继续计时。当前进度保留，重新验证同一考生可继续。确定退出本科目？'))return;
       if(ensureExamAccess())save();

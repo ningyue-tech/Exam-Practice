@@ -1,197 +1,198 @@
 /**
- * 仅含名单校验值，不含明文姓名、手机号。
+ * 仅含姓名与手机号后6位的校验值，不含明文个人资料。
  * 使用 node scripts/manage-whitelist.mjs 维护，勿手工加入个人资料。
  * 每条记录随机盐 + PBKDF2-SHA-256（600000次）。
  * 校验值仍可能被离线猜测；纯前端入口不能替代服务端认证。
  */
 window.EXAM_WHITELISTS = {
-  "version": 2,
+  "version": 3,
+  "credential": "name-phone-last6",
   "algorithm": "PBKDF2-SHA-256",
   "iterations": 600000,
   "sessionHours": 12,
   "auto": [
     {
-      "salt": "4bdbc29d2b7e36becef1245294dd6a62",
-      "hash": "0dda73aa747c652692cded2f770ad60c456e1b46652f5c806a4ac8a995933e22",
+      "salt": "9e4bbe5ff3109263effc7b3c304f9791",
+      "hash": "bda7d75c82e0ebcaf82cce001e35326db92875180a488ca0225c0caf09277851",
       "enabled": true
     },
     {
-      "salt": "04511208bcfe99f0332b73a718032d57",
-      "hash": "e4de6c43b79e1070b1cd8230b90664f42d937d79a0a69e08064a3186dfeb1990",
+      "salt": "5a420c7e193309867d6604534723ee40",
+      "hash": "4fb17d48ba71fa4a11c23f135da52d545a5e3671a7a49b15bc89d9e41e1061c5",
       "enabled": true
     },
     {
-      "salt": "0c023e5d8c7519662f3be4a6b6aa9165",
-      "hash": "6fed5507fb6ceb980b295b4c02b81da10fa3020dee9b30a538f24d728169f247",
+      "salt": "3a3b0072683a0f77d212a896b71de439",
+      "hash": "73c5fbeba5a07a222744ac0fb7120a8bf954428255a805239f9a1420f04e8e85",
       "enabled": true
     },
     {
-      "salt": "09effa55d6fa91f27217445dbc1ab492",
-      "hash": "53b8e680fd3e1da5ad2f1208cb019205612f00071a0c37471facaf6e615fd988",
+      "salt": "7f588d1e999156d2af88d51876946110",
+      "hash": "eb379e3f4e4f00fb7a546c17bd32aa7aa013ef5f7bc0a903a59b239c375916ae",
       "enabled": true
     },
     {
-      "salt": "9aaf0a9ec4e7a0e192d80ac92e4a20be",
-      "hash": "3d36e2883b8062c22e974d5908e8d736b6425ed850866a53a92d612dbb778381",
+      "salt": "fbf4e14d3708a242d308a246e494ff0d",
+      "hash": "d73bfaf0cbad80d5f6a2a5f45076d023a2cffe88e164ee83e60a5cfdce6ef118",
       "enabled": true
     },
     {
-      "salt": "c89315b8415bb475e128a0dee429f015",
-      "hash": "06f8ed3e926d6f9e4fa2a17207d839d470a9c00635d7293ee20e691cc7419867",
+      "salt": "292f53836d6a15de13294af4745922e9",
+      "hash": "f53afcde5e3ad443c1b517f915a703c245fcb251d1b0bb4d49300a856b16a726",
       "enabled": true
     },
     {
-      "salt": "77b72c7d1ed3bec044ca8632b7e70c1c",
-      "hash": "01bd843fe40af23f5f00371bf467241abea0c3cacaea5398783f099c5b597171",
+      "salt": "f473aeb3d7175482cf5583678d91b389",
+      "hash": "50aa690557102242f8e0ec8bc0eecc648e9338855e023ac19bd772b65210da5b",
       "enabled": true
     },
     {
-      "salt": "d178ddc0a0216ed84e587188b47eae46",
-      "hash": "3d8a3d7ac298d84277539ffa735c606dba2559ac717d205588112c1713b033da",
+      "salt": "3114f08c27db3b1d1d33d2a4fcee2551",
+      "hash": "4306441fea794c8c398a386ef2146be1e92a6482d8ef56de682da453a977222d",
       "enabled": true
     },
     {
-      "salt": "4c974a33a7b8609d4d15f22fac886bc2",
-      "hash": "c281a2746a14afd1813eeae9852b72165ca0e3339527c45700dde302854db5f9",
+      "salt": "5ed5cb16df40e505251a2d61ec80d705",
+      "hash": "e5b5f54b78bddf0af2f6bf90f4973fe8748bfd3276974b5191e160de6109fb62",
       "enabled": true
     },
     {
-      "salt": "e0a4ad378dd07d3507d86eed10dc995d",
-      "hash": "6710c13ff86436f4b86333e40e78a8fc628d594dc3e1d35ecd574020a67a93c7",
+      "salt": "8eeb03e07e1c4e2ff20b7e9ff054a3e9",
+      "hash": "2e223548862ff5d55ae9252035f45a1f00a3aed384b3f0361ed6688aa7aa597d",
       "enabled": true
     },
     {
-      "salt": "55012b7422f9812e572eef0bb67e7b3d",
-      "hash": "0e5e35a646be99865be9082ffbfd5cff8ea1b9d9a24d699bea4e1ae40e9a716c",
+      "salt": "0fd364726a8f3b3d2454090562645b84",
+      "hash": "5e397ad262fddbf5ec43f17914b140f99b7b0dba86e39580e1d6a0134724d11c",
       "enabled": true
     },
     {
-      "salt": "2c7312b44994b3d305a7351b149b852e",
-      "hash": "75e388a73b2f89068e89134f2a3fe4c0a58b0a29fee1f7c6070149fbc48c6419",
+      "salt": "c1706d49eb9ea700de6fd14c9841b8c8",
+      "hash": "b1bb8f5b45a282ce5413c7cd2f3ba1861dfcf5a94ef50ed7eba446db804f1675",
       "enabled": true
     },
     {
-      "salt": "9e00992f5c1b41dcd76ab5033df45682",
-      "hash": "661c8183e22efb08564f44e80d6617d7c31879d8331def796e8851d2cd2ce82a",
+      "salt": "5df2e9057718439d2b213922686b03c6",
+      "hash": "420843203df945c9406dcd6cae0bba49cb8e373c137e7b1bd530acd9b08c7565",
       "enabled": true
     },
     {
-      "salt": "549a0fb57f11abdd3ad1853b7bac3ca8",
-      "hash": "8aa38da4b512293dd704a221e9c71b75b2cc86dab96dd3ac33fa3c0daff0d53b",
+      "salt": "a8293de4cbe62142b8c8910b170aef4b",
+      "hash": "8c8580443dde48c78ea1d58eb282d607458a3f73bc3fe3a82f9d6b68da4867b6",
       "enabled": true
     },
     {
-      "salt": "69a172e4b1e9b325f3493a9cb504f3a0",
-      "hash": "40845f6845ef6e29efd7e405de86bd377437ed334dc039d5b38e462e5605a3a2",
+      "salt": "6343195e05d0f579c704ed005149479b",
+      "hash": "f3df7dd44b01258dfea8fcae0081dbc757fa274ce6f4334be43c987b417e0b8f",
       "enabled": true
     },
     {
-      "salt": "3337b97f9568c27eecdb0825db457fa4",
-      "hash": "4d7c778c83d70897755468da255e65afb700dcab3bbafd4941ca574523e8d761",
+      "salt": "dbe88a5d02da1de5d304a4093c513fcb",
+      "hash": "38a106654b06e367bebfc0b31d7e3c457b5d226f5fc24115c84765c7e8cbebfd",
       "enabled": true
     },
     {
-      "salt": "2805705b42283a409fd8dfeef2ddf48e",
-      "hash": "7d427af75b48d1cd720f26a209153338b9474f6013a5f060629dd7209df1c24f",
+      "salt": "93c9ad4d68186222d44733a6fc05d082",
+      "hash": "c9d7f7302f02c8c5dbeb268c9aa3304adad3f39f6d8283877c9f036804151c61",
       "enabled": true
     },
     {
-      "salt": "bbdbe91ee94d8feb38fcc8f14494dc24",
-      "hash": "dead82daa19f46e44a7181e952bea0606ccb212996fddde848ae02fadc094f42",
+      "salt": "194794fdd7e2a1640d24ae557a4a691f",
+      "hash": "83f48d5653d3eb0d410e5d3263e20c827067cd1ce67b2ae9d15a7f7d57837dc3",
       "enabled": true
     },
     {
-      "salt": "b7a53cade6e7ec1b6a09f7facae60957",
-      "hash": "0200156e027397f1892cd9f5dd896ae8a5c7d9865888357e6abeb50166d07b79",
+      "salt": "385c34b8b81e4edc5d0401052847ffb3",
+      "hash": "9c7465c7a2b17352e916e2de00738353bb52878c2fa776cb18a1089e92b28acc",
       "enabled": true
     },
     {
-      "salt": "77344daf168cd78cd9e2cd391057191d",
-      "hash": "06e54e8e56726dac3ec4806b84fecc1763b47845a787bdf3c94711ca1adf96a8",
+      "salt": "b5ec6ba7f3349dc75eae7e62ea657019",
+      "hash": "15c2ab6c614a9c9270a81b5e5a0935ca36e4ead956c11479cdb5b16814b9c22b",
       "enabled": true
     },
     {
-      "salt": "2594581e23470022043af2c8f743c43f",
-      "hash": "d2360287c69d46893689e183eedd49922bc9a27f4dfd38c81313f4e2e9fd9f60",
+      "salt": "c18ad0a494a5cbcbd454db41207ef594",
+      "hash": "a1f779546c35a89edf975ccb71c26bd07240aaa94ee1019d61c5900c547966aa",
       "enabled": true
     },
     {
-      "salt": "c6944c3c9ba135b104e7d8bd8f1fb03d",
-      "hash": "1003e88e68ede7d8230dcfc9dceb18473e79f262610158afedc0b7d46db32abb",
+      "salt": "756a5f9722bbd05aac4567d0fcdad582",
+      "hash": "da861de0eabd75c33a91873a0a2797f1bbbe1683b0fcc21b41a6f55f85a27fdb",
       "enabled": true
     },
     {
-      "salt": "2556760979c4e52d3de7beb5176305b8",
-      "hash": "5d3124bf327acf759955a19ca466895beaf7401663291a4d812a00d5971a15e4",
+      "salt": "31cd4fa9c6cf229d4a510a4378bf66a2",
+      "hash": "f593294527ec2816b2cb6e82a70f4d9076159d5aaa65bb890c48aab06f3a4a43",
       "enabled": true
     },
     {
-      "salt": "bdef3d277756f522a6fd19bcc225ec96",
-      "hash": "2fe225c1dd11f7c10aed86abb6f1b7d99cac0d4db6e183a6d1a5cb6f1cda1606",
+      "salt": "2fbe60d6708b46ee5fedcba3d70ffce5",
+      "hash": "364553aa8a3d359a512f14041f909fe9206fb3d6ad5d8b3a64dcc60942f808e8",
       "enabled": true
     },
     {
-      "salt": "058e3ab7e7810cd76585af57a370a3c6",
-      "hash": "e3a2a64b4a82c98feb87f5427b70b3a2ea10e7ad532e6313f29aa6c6ecef17f4",
+      "salt": "58ba87d3e2844d81703634318e0fad6f",
+      "hash": "d82a9ad0006bba95e94252607682c75f3c296302a81755b51b57a1a09cfb8ad1",
       "enabled": true
     },
     {
-      "salt": "eef314036507e74a8b537f1621b31ada",
-      "hash": "59b07a2e29e4b3fbe37e045a11e120c63b100158377cadc0d302872abd905dc9",
+      "salt": "ffaea66059c54e381e8e0edd2f26c254",
+      "hash": "c7169643ad2bb4f9c6820b5ab41d048d5d872316f41438baa77b72551d7cadae",
       "enabled": true
     },
     {
-      "salt": "4e99bf29011c55266aefdabd3d9031b4",
-      "hash": "af84f3d0ef4f59ca26600d0553ba3ddaa856aafdeb42eb90f6949cab1070978a",
+      "salt": "3f3a9cf513d6c17fd42fd145511636c7",
+      "hash": "64700f59ca28946beca291c9a468cbb8d0d844a204fcef080fc9f00a764f955d",
       "enabled": true
     }
   ],
   "marketing": [
     {
-      "salt": "079c577a2a241966e9b02a2514f4d077",
-      "hash": "42c1cdac1eca776652baacf7b88509a5b1675d5b1c7417cf043fd2299d0ac663",
+      "salt": "bcc93a305de0b2f90314e9c45972203b",
+      "hash": "7560510b6299f17047389f66d9449867517fd6a4bdace3c29b5286a045cd623b",
       "enabled": true
     },
     {
-      "salt": "03b722f3ae3e7c9b111e1891543a3d5f",
-      "hash": "e4d243f87ca8b1e7f7ca060921040f59dd920f1c6cc45e7ae97e15b2cc1b5e37",
+      "salt": "78b5af5f2baba74ffda0cfb724c26e0a",
+      "hash": "3b2ef61e3377afe19cd0ccb91b30585e7b26c4bfd04259dc7aac48c14113d54a",
       "enabled": true
     },
     {
-      "salt": "bddb4a37291db909479cb081bb919dc9",
-      "hash": "c749885e024f63b2609e68d4013b211c534417d94ca94a4baa18eaf7e5d33a91",
+      "salt": "63904807eb1840f83160d28e4dfaabac",
+      "hash": "dfcb1909593263444258ae7db6a223781dca645216d9699967415b01a600b2b8",
       "enabled": true
     },
     {
-      "salt": "2a19cb6af28fe05456974c63a7198cb3",
-      "hash": "cfb7141ddfad8ad56e7b9150a7e94fb35b1c629181bf937e2eecffaa0523506d",
+      "salt": "3dac0effc899d791f5da8dae0a335c2d",
+      "hash": "32b4bdc68c2546e47810291da6a7c24b263dc009df7a4c2234c85c37ac1d9a49",
       "enabled": true
     },
     {
-      "salt": "e821c45efbd844c44d6104a2215cb637",
-      "hash": "2c2c207712439668ce52b6fc8b1fd879a229f474e31b81b8dca7cebce28c4b26",
+      "salt": "7a50d66e55a68b498dd2937530e2e171",
+      "hash": "e74f06c1d5a6e501a1ac5ee0699fdd86837db89e52cf2d06a6e97a6fe5b22982",
       "enabled": true
     },
     {
-      "salt": "67446e051506783d86e57af8a9c07dcb",
-      "hash": "7dcf33046c3e401a3e2e3788a2ff07d89d9d42a57f8daf2bfd25d9e3b314d7e6",
+      "salt": "0f3b66ea5299850a3946b2a8d071cc1e",
+      "hash": "a7617a54970d9b1a51c97e78d9413c544cf1400973b9e1e86445da0cf2e0298a",
       "enabled": true
     },
     {
-      "salt": "ad498026d3ee0fedf53a38380c30873a",
-      "hash": "93d612d19c609f3c8ba8cc23f932d945d90ed3cee1268ac13d9ef60c58c7277c",
+      "salt": "309b5d1c963a2610dd8c454a226b955b",
+      "hash": "5cbf6bfdb8bcb64870e42333e8de5f8ffeaa15cfb18ab21f9891aff1643c4414",
       "enabled": true
     },
     {
-      "salt": "8dc0114a9b8741966e0f0f0e06282b7e",
-      "hash": "288d65fd27c72ca2eb39d799542fb244e9c637d8038f8cb56140488b01db6891",
+      "salt": "ba41cb4ce6739b3eacb1f89f25d62b1e",
+      "hash": "35842d3bbe3cce684cc0bdffc273350485e97721e5b7a8a5cfde7d7670ec9bf5",
       "enabled": true
     }
   ],
   "english": [
     {
-      "salt": "b51d360763036662e55d8fd2a9ca6bac",
-      "hash": "325b0467419eb261b725846f94a855ac31136dfa2fd6a0e819ac66d2ec39f6f1",
+      "salt": "f53922ea78cdc897efa37fa09735d186",
+      "hash": "dee8dffe71a54ac68f63083c5068c3f87bba6394b5d80b8c7f65bb0359a57af2",
       "enabled": true
     }
   ]
