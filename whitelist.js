@@ -175,6 +175,16 @@ window.EXAM_WHITELISTS = {
       "salt": "84ca5a82349d4679505450d3114772c3",
       "hash": "1bec8227242315001ab58fd2873e09c7370ffef5dd40a438b50d0009fdfa9f5e",
       "enabled": true
+    },
+    {
+      "salt": "172874067846f748cc2b538a343c2c8e",
+      "hash": "7b1f20a9bcd9e26e1ffc313563138c7772ca348e9d2e6257bb8abe363e9fe583",
+      "enabled": true
+    },
+    {
+      "salt": "ebaf47a32f04e314fb380757e27855f0",
+      "hash": "6b887f32e219719c3dc05f4bd19a8e7b3890a69291cf6d6863aba9b2ff19a658",
+      "enabled": true
     }
   ],
   "marketing": [
@@ -342,6 +352,16 @@ window.EXAM_WHITELISTS = {
       "salt": "2c899073dacd6baf0b822407271dbf2a",
       "hash": "e13662d9a67aaa8917e1279acb067599c91aee2531b239112515666367d4bed2",
       "enabled": true
+    },
+    {
+      "salt": "01821cce221afcb35759a762d368f76c",
+      "hash": "b675216dec06f6602aa2a8b511bc8654623a080a36c554a26939e6001980fdfe",
+      "enabled": true
+    },
+    {
+      "salt": "a7fc8d81e1651bfb0d75648634b540da",
+      "hash": "1ec2c35caeafb8552375ec14f18e40179e52514dc9bb3a9f56e66451aabc8ea0",
+      "enabled": true
     }
   ],
   "english": [
@@ -503,6 +523,16 @@ window.EXAM_WHITELISTS = {
     {
       "salt": "dc89fd174516d8ecc8beb49f4e0c9f3e",
       "hash": "c22396112972c92d1b19e851f90b45b5af374004d5dd232c78e79357a8b5449c",
+      "enabled": true
+    },
+    {
+      "salt": "8a0e4180e2ec6b3bae9b9afd6709c92b",
+      "hash": "12bb95af7e5e8564be833cb6ebfc8aa27683937403c0009f9c42868e9f5da69f",
+      "enabled": true
+    },
+    {
+      "salt": "bd28c302bbc880f6e13fe8701e228f01",
+      "hash": "b9e6267177fe2105cb5e5673b4ebdc8730ae97f798599ff48a0e3b5665170843",
       "enabled": true
     }
   ]

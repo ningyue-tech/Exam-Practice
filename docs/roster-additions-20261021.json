@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-21",
+  "passed": true,
+  "previousCommit": "0bafac3",
+  "credential": "name-phone-last6",
+  "requestedStudentAccounts": 1,
+  "requestedViewerAccounts": 1,
+  "newStudentSubjectRecords": 3,
+  "newViewerSubjectRecords": 3,
+  "subjectsPerAccount": 3,
+  "verifiedNewAccountLogins": 6,
+  "preservedExistingRecords": 98,
+  "totalRecords": 104,
+  "counts": {
+    "auto": 35,
+    "marketing": 35,
+    "english": 34
+  },
+  "uniqueSalts": 104,
+  "existingPermissionsPreserved": true,
+  "viewerSessionRefreshPassed": true,
+  "noNewPlaintextIdentitiesInRoster": true,
+  "viewerScope": "Exam access only; no privileged administration backend",
+  "limitations": [
+    "Browser UI and mobile performance not verified"
+  ],
+  "automatedChecks": {
+    "loginUI": {
+      "passed": 7,
+      "failed": 0
+    },
+    "exams": {
+      "passed": 45,
+      "failed": 0
+    }
+  }
+}
